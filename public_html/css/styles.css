@@ -1,0 +1,74 @@
+.modal-footer {   border-top: 0px; }
+
+body {
+     margin-top: 5px;
+     background: url(../img/maap.jpg) no-repeat center center fixed;  /* PLANO DE FUNDO */
+     background-size: cover; /*Css padrão*/
+    -webkit-background-size: cover; /*Css safari e chrome*/
+    -moz-background-size: cover; /*Css firefox*/
+    -ms-background-size: cover; /*Css IE não use essa mer#^@%#*/
+    -o-background-size: cover; /*Css Opera*/
+     }
+img{
+    opacity: 0.3;
+}
+            
+            
+#relatorios{
+    float: left;
+    width: 600px;
+    height: auto;
+    min-height: 500px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #EDEDED;
+    margin-right: 5px;
+    margin-left: 70px;
+	text-align:center;
+}
+#acessos{
+    float: left;
+    width: 600px;
+    height: auto;
+    min-height: 500px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #EDEDED;
+    margin-right: 5px;
+    margin-left: 25px;
+	text-align:center;
+}
+
+#caixaRelatorio{
+	width:500px;
+	height:auto;
+	margin-left:30px;
+	background-color: lightgray;
+}
+
+#mapa{
+    float: left;
+    width: 600px;
+    height: auto;
+    min-height: 500px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #EDEDED;
+    margin-right: 5px;
+    margin-left: 70px;
+	text-align:center;
+}
+
+#buscar{
+    float: left;
+    width: 600px;
+    height: auto;
+    min-height: 500px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #EDEDED;
+    margin-right: 5px;
+    margin-left: 25px;
+	text-align:center;
+}
+

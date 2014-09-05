@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="css/styles.css" rel="stylesheet">   
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <!-- Locastyle -->
+        <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="//assets.locaweb.com.br/locastyle/2.0.6/stylesheets/locastyle.css">
+        <!-- Fim Locastyle -->
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>        
+        
+ 
+       <!-- add button -->
+        <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+
+        <script>
+
+        $(document).ready(function(){
+
+                $('#add').click(function(){
+
+                        var inp = $('#box');
+
+                        var i = $('input').size() + 1;
+
+                        $('<div id="box' + i +'"><input type="text" id="name" class="name" name="name' + i +'" placeholder="Input '+i+'"/><img src="remove.png" width="32" height="32" border="0" align="top" class="add" id="remove" /> </div>').appendTo(inp);
+
+                        i++;
+
+                });
+
+
+
+                $('body').on('click','#remove',function(){
+
+                        $(this).parent('div').remove();
+
+
+                });
+
+
+        });
+
+        </script>        
+
+<!-- Fim button -->
+
+  </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">Navegador muito<strong>antigo</strong>. Por favor <a href="http://browsehappy.com/">atualize seu navegador</a>.</p>
+        <![endif]-->
+        
+        <div class="container">
+            <iframe src="menu.html" scrolling="no" frameborder="0" style="width: 100%;max-height: 60px;"></iframe>
+        </div>
+        
+        <!-- INICIO CONTEUDO DO SITE -->
+        <div id="mapa">           
+            <div> <!-- parte do mapa -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m22!1m12!1m3!1d3660.3922513674174!2d-51.91447737794699!3d-23.446311515885675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m7!1i0!3e6!4m0!4m3!3m2!1d-23.446776699999997!2d-51.913725899999996!5e0!3m2!1sen!2s!4v1408557579648" width="580" height="480" frameborder="0" style="border: 3px solid grey; margin-top: 12px;"></iframe>
+            </div>
+        </div>
+        <div id="buscar">
+            <h1>Dados Geográficos</h1>
+                    
+            <div class="lessoncup">
+
+            <div id="box">
+                <input name="name" type="text" id="name" class="name" placeholder="Longitude">
+                <input name="name" type="text" id="name" class="name" placeholder="Latitude">
+                <input name="name" type="text" id="name" class="name" placeholder="Azimute">
+
+                <img src="add.png" width="32" height="32" border="0" align="top" class="add" id="add" />
+            </div>
+
+            </div>
+
+            
+                   <form action="/servidor/salvar" method="post" disabled="" class="ls-form-text">
+                        <input type="hidden" name="token" value="ehOCabraMesmo">
+                        <div class="well well-sm clearfix ls-table-group-actions">
+                                <p class="d-inline-block">
+                                        <strong class="counterChecks">0</strong>
+                                        <span class="counterChecksStr">item selecionado</span>
+                                </p>
+                                <div class="actions pull-right">                                       
+                                        <button type="button" class="btn btn-default">
+                                                <a>Excluir</a>
+                                        </button>
+                                </div>
+                        </div>
+                        <table class="table ls-table">
+                                <thead>
+                                        <tr>
+                                                <th class="txt-center"><input type="checkbox"></th>
+                                                <th class="ls-nowrap col-xs-3">Título</th>
+                                                <th class="hidden-xs">Campanha
+                                                </th><th>Status</th>
+                                                <th class="hidden-xs">Data de envio</th>
+                                                <th class="ls-table-actions">Ações</th>
+                                        </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                        <tr>
+                                                <td> <input name="id" value="1" type="checkbox"> </td>
+                                                <td>Texto 1</td>
+                                                <td>Campanha</td>
+                                                <td>Enviada</td>
+                                                <td>21/09/2013</td>                                                                                              
+                                        </tr>
+                                        <tr>
+                                                <td> <input name="id" value="2" type="checkbox"> </td>
+                                                <td>Texto 2 </td>
+                                                <td>Campanha</td>
+                                                <td>Enviada</td>
+                                                <td>21/09/2013</td>                                                
+                                        </tr>                                        
+                                </tbody>
+                        </table>
+                </form>
+            
+            
+            
+            
+            
+            
+            
+            
+<!--              <div class="input-group" style="margin: 10px;">
+                <span class="input-group-addon">
+                  <input type="checkbox">
+                </span>
+                  <input type="text" class="form-control" placeholder="Latitude">
+                  <input type="text" class="form-control" placeholder="Longitude">
+                  <input type="text" class="form-control" placeholder="Azimute">                  
+              </div>
+            
+              <div class="input-group" style="margin: 10px;">
+                <span class="input-group-addon">
+                  <input type="checkbox">
+                </span>
+                  <input type="text" class="form-control" placeholder="Latitude">
+                  <input type="text" class="form-control" placeholder="Longitude">
+                  <input type="text" class="form-control" placeholder="Azimute">                  
+              </div>
+            
+            <button type="button" class="btn btn-success">Buscar</button>
+            <button type="button" class="btn btn-primary">Adicionar</button>
+            <button type="button" class="btn btn-danger">Remover</button>-->
+            
+          
+        </div>      
+        
+        
+        
+        
+        <!-- SCRIPT JQUERY -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.js"><\/script>')</script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/addinput.js"></script>
+        <script src="js/main.js"></script>
+         <!-- Locastyle -->
+        <script type="text/javascript" src="//assets.locaweb.com.br/locastyle/2.0.6/javascripts/locastyle.js"></script>
+        <!-- Fim Locastyle -->
+    </body>
+</html>
