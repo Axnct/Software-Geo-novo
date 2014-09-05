@@ -27,31 +27,24 @@
 
         <script>
 
-        $(document).ready(function(){
+           $(document).ready(function() {
+             var max_fields      = 10; //maximum input boxes allowed
+             var wrapper         = $(".input_fields_wrap"); //Fields wrapper
+             var add_button      = $(".add_field_button"); //Add button ID
 
-                $('#add').click(function(){
+             var x = 1; //initlal text box count
+             $(add_button).click(function(e){ //on add input button click
+                 e.preventDefault();
+                 if(x < max_fields){ //max input box allowed
+                     x++; //text box increment
+                     $(wrapper).append('<tr><td><input name="id" value="3" type="checkbox"></td><td> <div><input type="text" name="mytext[]"></div>Texto 1</td><td><div><input type="text" name="mytext[]"></div>Campanha</td><td><div><input type="text" name="mytext[]"></div>Enviada</td><td><div><input type="text" name="mytext[]"></div>21/09/2013</td><a href="#" class="remove_field">Remove</a></tr>'); //add input box
+                 }
+             });
 
-                        var inp = $('#box');
-
-                        var i = $('input').size() + 1;
-
-                        $('<div id="box' + i +'"><input type="text" id="name" class="name" name="name' + i +'" placeholder="Input '+i+'"/><img src="remove.png" width="32" height="32" border="0" align="top" class="add" id="remove" /> </div>').appendTo(inp);
-
-                        i++;  
-
-                });
-
-
-
-                $('body').on('click','#remove',function(){
-
-                        $(this).parent('div').remove();
-
-
-                });
-
-
-        });
+             $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+                 e.preventDefault(); $(this).parent('div').remove(); x--;
+             })
+         });
 
         </script>        
 
@@ -76,18 +69,8 @@
         <div id="buscar">
             <h1>Dados Geográficos</h1>
                     
-            <div class="lessoncup">
-
-            <div id="box">
-                <input name="name" type="text" id="name" class="name" placeholder="Longitude">
-                <input name="name" type="text" id="name" class="name" placeholder="Latitude">
-                <input name="name" type="text" id="name" class="name" placeholder="Azimute">
-
-                <img src="add.png" width="32" height="32" border="0" align="top" class="add" id="add" />
-            </div>
-
-            </div>
-
+            <button class="add_field_button">Add</button>
+                    
             
                    <form action="/servidor/salvar" method="post" disabled="" class="ls-form-text">
                         <input type="hidden" name="token" value="ehOCabraMesmo">
@@ -113,14 +96,21 @@
                                                 <th class="ls-table-actions">Ações</th>
                                         </tr>
                                 </thead>
-                                <tbody>
+                                <tbody class="input_fields_wrap">
+<!--                                        <tr>
+                                            <div class="input_fields_wrap">
+                                                <button class="add_field_button">Add</button>
+                                                <div><input type="text" name="mytext[]"></div>
+                                                <div><input type="text" name="mytext[]"></div>
+                                            </div>
+                                        </tr>-->
                                     
                                         <tr>
-                                                <td> <input name="id" value="1" type="checkbox"> </td>
-                                                <td>Texto 1</td>
-                                                <td>Campanha</td>
-                                                <td>Enviada</td>
-                                                <td>21/09/2013</td>                                                                                              
+                                                <td><input name="id" value="1" type="checkbox"></td>
+                                                <td> <div><input type="text" name="mytext[]"></div>Texto 1</td>
+                                                <td><div><input type="text" name="mytext[]"></div>Campanha</td>
+                                                <td><div><input type="text" name="mytext[]"></div>Enviada</td>
+                                                <td><div><input type="text" name="mytext[]"></div>21/09/2013</td>                                                                                              
                                         </tr>
                                         <tr>
                                                 <td> <input name="id" value="2" type="checkbox"> </td>
