@@ -23,7 +23,7 @@
         
  
        <!-- add button -->
-        <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 
         <script>
 
@@ -37,7 +37,7 @@
                  e.preventDefault();
                  if(x < max_fields){ //max input box allowed
                      x++; //text box increment
-                     $(wrapper).append('<tr><td><input name="id" value="3" type="checkbox"></td><td> <div><input type="text" name="mytext[]"></div>Texto 1</td><td><div><input type="text" name="mytext[]"></div>Campanha</td><td><div><input type="text" name="mytext[]"></div>Enviada</td><td><div><input type="text" name="mytext[]"></div>21/09/2013</td><a href="#" class="remove_field">Remove</a></tr>'); //add input box
+                     $(wrapper).append('<tr><td><input name="id" value="2" type="checkbox"></td><td> <div><input class="form-control input-lg" type="text" placeholder="-23.4467767"></div></td><td> <div><input class="form-control input-lg" type="text" placeholder="-51.9137259" name="mytext[]"></div></td><td> <div><input class="form-control input-lg" type="text" placeholder="120º" name="mytext[]"></div></td></tr>'); //add input box
                  }
              });
 
@@ -81,7 +81,7 @@
                                 </p>
                                 <div class="actions pull-right">                                       
                                         <button type="button" class="btn btn-default">
-                                                <a>Excluir</a>
+                                                <a href="#" class="remove_field">Excluir</a>
                                         </button>
                                 </div>
                         </div>
@@ -89,68 +89,23 @@
                                 <thead>
                                         <tr>
                                                 <th class="txt-center"><input type="checkbox"></th>
-                                                <th class="ls-nowrap col-xs-3">Título</th>
-                                                <th class="hidden-xs">Campanha
-                                                </th><th>Status</th>
-                                                <th class="hidden-xs">Data de envio</th>
-                                                <th class="ls-table-actions">Ações</th>
+                                                <th class="ls-nowrap col-xs-3">Longitude</th>
+                                                <th class="hidden-xs">Latitude</th>
+                                                <th class="hidden-xs">Azimute</th>                                               
                                         </tr>
                                 </thead>
-                                <tbody class="input_fields_wrap">
-<!--                                        <tr>
-                                            <div class="input_fields_wrap">
-                                                <button class="add_field_button">Add</button>
-                                                <div><input type="text" name="mytext[]"></div>
-                                                <div><input type="text" name="mytext[]"></div>
-                                            </div>
-                                        </tr>-->
-                                    
+                                <tbody class="input_fields_wrap">                                
                                         <tr>
                                                 <td><input name="id" value="1" type="checkbox"></td>
-                                                <td> <div><input type="text" name="mytext[]"></div>Texto 1</td>
-                                                <td><div><input type="text" name="mytext[]"></div>Campanha</td>
-                                                <td><div><input type="text" name="mytext[]"></div>Enviada</td>
-                                                <td><div><input type="text" name="mytext[]"></div>21/09/2013</td>                                                                                              
-                                        </tr>
-                                        <tr>
-                                                <td> <input name="id" value="2" type="checkbox"> </td>
-                                                <td>Texto 2 </td>
-                                                <td>Campanha</td>
-                                                <td>Enviada</td>
-                                                <td>21/09/2013</td>                                                
-                                        </tr>                                        
+                                                <td> <div><input class="form-control input-lg" type="text" placeholder="-23.4467767" name="mytext[]"></div></td>
+                                                <td> <div><input class="form-control input-lg" type="text" placeholder="-51.9137259" name="mytext[]"></div></td>
+                                                <td> <div><input class="form-control input-lg" type="text" placeholder="120º"></div></td>                                                                                              
+                                        </tr>                                                                            
                                 </tbody>
                         </table>
                 </form>
             
-            
-            
-            
-            
-            
-            
-            
-<!--              <div class="input-group" style="margin: 10px;">
-                <span class="input-group-addon">
-                  <input type="checkbox">
-                </span>
-                  <input type="text" class="form-control" placeholder="Latitude">
-                  <input type="text" class="form-control" placeholder="Longitude">
-                  <input type="text" class="form-control" placeholder="Azimute">                  
-              </div>
-            
-              <div class="input-group" style="margin: 10px;">
-                <span class="input-group-addon">
-                  <input type="checkbox">
-                </span>
-                  <input type="text" class="form-control" placeholder="Latitude">
-                  <input type="text" class="form-control" placeholder="Longitude">
-                  <input type="text" class="form-control" placeholder="Azimute">                  
-              </div>
-            
-            <button type="button" class="btn btn-success">Buscar</button>
-            <button type="button" class="btn btn-primary">Adicionar</button>
-            <button type="button" class="btn btn-danger">Remover</button>-->
+         <button type="button" class="btn btn-success">Buscar</button>
             
           
         </div>      
