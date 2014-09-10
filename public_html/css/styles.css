@@ -22,20 +22,17 @@ img{
     margin-top: 5px;
     margin-bottom: 5px;
     background-color: #EDEDED;
-    margin-right: 5px;
-    margin-left: 70px;
+    margin-right: 5px;    
 	text-align:center;
 }
 #acessos{
-    float: left;
-    width: 600px;
+    float: right;
+    width: 530px;
     height: auto;
     min-height: 500px;
     margin-top: 5px;
     margin-bottom: 5px;
     background-color: #EDEDED;
-    margin-right: 5px;
-    margin-left: 25px;
 	text-align:center;
 }
 
@@ -54,21 +51,19 @@ img{
     margin-top: 5px;
     margin-bottom: 5px;
     background-color: #EDEDED;
-    margin-right: 5px;
-    margin-left: 70px;
+    margin-right: 5px;    
 	text-align:center;
 }
 
 #buscar{
     float: left;
-    width: 600px;
+    width: 530px;
     height: auto;
     min-height: 500px;
     margin-top: 5px;
     margin-bottom: 5px;
     background-color: #EDEDED;
-    margin-right: 5px;
-    margin-left: 25px;
+    margin-right: 5px;    
 	text-align:center;
 }
 

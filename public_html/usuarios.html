@@ -42,51 +42,33 @@
                                                     <div class="modal-content">
                                                             <div class="modal-header">
                                                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                                                    <h4 class="modal-title" id="myModalLabel">Título do Modal</h4>
+                                                                    <h4 class="modal-title" id="myModalLabel">Novo Usuário</h4>
                                                             </div>
                                                             <div class="modal-body">
-                                                                <div>
-                                                                    <div><input type="text" class="form-control" placeholder="Ex.: João Junior">
-                                                                    </div>
-                                                                    <div><input type="text" class="form-control phone-mask" placeholder="Ex.: 0000-0000">
-                                                                    </div>
-                                                                    <div><input type="text" class="form-control cpf-mask" placeholder="Ex.: 000.000.000-00">
-                                                                    </div>
-                                                                    <div><input type="text" class="form-control" placeholder="Ex.: dd/mm/aaaa" data-mask="00/00/0000" maxlength="10" autocomplete="off">
-                                                                    </div>                                                                    
-                                                                    <div> <form>
-                                                                                <div class="form-inline">
-                                                                                        <div class="form-group">
-                                                                                                <label class="control-label" for="user_password2">Nova senha</label>
-                                                                                                <p class="info-label">Senha entre 8 a 14 caracteres, contendo letras e números</p>
-                                                                                                <div>
-                                                                                                        <div class="input-group col-md-4 f-left">
-                                                                                                                <input class="password form-control" id="user_password2" data-component="password-strength" data-monitor-id="password-strength-monitor" type="password">
-                                                                                                                <a class=" input-group-addon toggle-pass ico-eye" data-classtoggle="ico-eye,ico-eye-blocked" data-target="#user_password2" href="#"></a>
-                                                                                                        </div>
-
-                                                                                                        <div class="password-strength">
-                                                                                                                <p>Força da senha</p>
-                                                                                                                <div id="password-strength-monitor" class="monitor"></div>
-                                                                                                        </div>
-                                                                                                </div>
-
-                                                                                        </div>
-                                                                                </div>
-                                                                        </form>
-                                                                    </div>
-                                                                    <div>
-                                                                        <form>
-                                                                                <div class="form-inline">
-                                                                                        <label class="control-label" for="user_password">Repita a nova senha</label>
-                                                                                        <div class="input-group col-md-4 f-left">
-                                                                                                                <input class="password form-control" id="user_password2" data-component="password-strength" data-monitor-id="password-strength-monitor" type="password">
-                                                                                                                <a class=" input-group-addon toggle-pass ico-eye" data-classtoggle="ico-eye,ico-eye-blocked" data-target="#user_password2" href="#"></a>
-                                                                                        </div>
-                                                                                </div>
-                                                                        </form>
-                                                                    </div>
-                                                                </div>
+                                                                <form role="form">
+                                                                    <fieldset>
+                                                                            <div class="form-group">
+                                                                                    <label for="exampleInputEmail1">Nome</label>
+                                                                                    <input class="form-control" placeholder="Insira seu nome aqui">
+                                                                                    <p class="help-block">O Nome será usado para efetuar o login.</p>
+                                                                                    <label for="exampleInputEmail1">Email</label>
+                                                                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Insira seu nome aqui">
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                    <label for="exampleSelect">Tipo de Acesso</label>
+                                                                                    <select id="exampleSelect" class="form-control">
+                                                                                            <option value="">Administrador</option>
+                                                                                            <option value="">Pesquisador</option>
+                                                                                    </select>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                    <label for="exampleInputPassword1">Senha</label>
+                                                                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                                                                                    <label for="exampleInputPassword1">Confirmar Senha</label>
+                                                                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                                                                            </div>
+                                                                    </fieldset>          
+                                                                </form>     
                                                             </div>
                                                             <div class="modal-footer">
                                                                     <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
