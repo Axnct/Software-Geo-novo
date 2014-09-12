@@ -6,14 +6,17 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        
+        <title></title> 
+        
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link href="css/styles.css" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="//assets.locaweb.com.br/locastyle/2.0.6/stylesheets/locastyle.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
@@ -22,288 +25,311 @@
             <p class="browsehappy">Navegador muito<strong>antigo</strong>. Por favor <a href="http://browsehappy.com/">atualize seu navegador</a>.</p>
         <![endif]-->
         
-       <div class="container"> <!-- menu -->
+        <div class="container"> <!-- menu -->
             <iframe src="menu.html" scrolling="no" frameborder="0" style="width: 100%;max-height: 60px;"></iframe>
         </div>
         
         <!-- INICIO CONTEUDO DO SITE -->
-        <div class="container">
-            <label for="elemento">Campo de senha</label>
-            <input type="password" class="form-control" id="elemento">
+        <div class="container">            
+            <div class="form-group">
+                     <label for="exampleInputEmail1">Insira a data inicial  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspInsira a data final   </label>
+                    <form>
+                        <div class="row date-range">
+                            <div class="col-lg-3">
+                                <label for="example1" class="sr-only">Data</label>
+                                    <div class="input-group datepicker">
+                                         <input class="form-control date-mask from-date" placeholder="dd/mm/aaaa" type="text">
+                                    </div>
+                            </div>
+                            
+                            <div class="col-lg-3">
+                                <label for="example1" class="sr-only">Data</label>
+                                <div class="input-group datepicker">
+                                    <input class="form-control date-mask to-date" placeholder="dd/mm/aaaa" type="text">
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </form>
+        	
+            </div>
+           
         </div>
         
-       <div class="container">
-       <div id="relatorios" style="overflow: auto; width: 550px; height: 200px;">
-            <h1>RELATÓRIOS</h1>
-			<table width="500px"  class="table table-condensed">
-				
-				<thead>
-					<tr class="active"> 
-					<td> <b>  Causa da Busca  </b></td>
-					<td><b>Data <b></td>
-                                        </tr>
-				</head>
-				
-				<tbody>
-					<tr> 
-					<td><a href ="exemplosrelatorios.html">assassinato</h1></a></td>
-					<td>01/03/2014 14:53:45</td>
-				
-				</tr>
-					
-				<tr class="active"> 
-					<td>Nome1</td>
-					<td>01/03/2014 08:22:45</td>
-					
-				</tr>
-					
-				<tr> 
-					<td>Nome2</td>
-					<td>02/03/2014 11:43:45</td>
-					
-				</tr>
-				
-				<tr class="active"> 
-					<td>Nome12</td>
-					<td>01/03/2014 14:53:45</td>
-					
-				</tr>
-					
-				<tr> 
-					<td>Nome35</td>
-					<td>01/03/2014 08:22:45</td>
-					
-				</tr>
-					
-				<tr class="active"> 
-					<td>Nome11</td>
-					<td>02/03/2014 11:43:45</td>
-					
-				</tr>
-					
-				<tr> 
-					<td>Nome22</td>
-					<td>02/12/2014 14:53:45</td>
-			
-				</tr>
-					
-				<tr class="active"> 
-					<td>Nome1</td>
-					<td>01/03/2014 08:22:45</td>
-				
-				</tr>
-					
-				<tr> 
-					<td>Nome2</td>
-					<td>02/03/2014 11:43:45</td>
-					
-				</tr>			
-				
-					
-				<tr class="active"> 
-					<td>Nome4</td>
-					<td>01/03/2014 14:53:45</td>
-				
-				</tr>
-					
-				<tr> 
-					<td>Nome1</td>
-					<td>01/03/2014 08:22:45</td>
-				
-				</tr>
-					
-				<tr class="active"> 
-					<td>Nome2</td>
-					<td>02/03/2014 11:43:45</td>
-					
-				</tr>
-				
-				<tr> 
-					<td>Nome12</td>
-					<td>01/03/2014 14:53:45</td>
-					
-				</tr>
-					
-				<tr class="active"> 
-					<td>Nome35</td>
-					<td>01/03/2014 08:22:45</td>
-				
-				</tr>
+       <div class="container1">
+            <div id="relatorios" style="overflow: auto; width: 550px; height: 200px;">
+                 <h1>RELATÓRIOS</h1>
+                             <table width="500px"  class="table table-condensed">
 
-				<tr> 
-					<td>Nome35</td>
-					<td>01/03/2014 08:22:45</td>
-				
-				</tr>
-					
-				<tr class="active"> 
-					<td>Nome11</td>
-					<td>02/03/2014 11:43:45</td>
-				
-				</tr>
-					
-				<tr> 
-					<td>Nome22</td>
-					<td>02/12/2014 14:53:45</td>
-			
-				</tr>
-					
-				<tr class="active"> 
-					<td>Nome1</td>
-					<td>01/03/2014 08:22:45</td>
-					
-				</tr>
-					
-				<tr> 
-					<td>Nome2</td>
-					<td>02/03/2014 11:43:45</td>
-				</tr>
-				</tbody>  
-			</table>  
-			
-           </div>
+                                     <thead>
+                                             <tr class="active"> 
+                                             <td> <b>  Causa da Busca  </b></td>
+                                             <td><b>Data <b></td>
+                                             </tr>
+                                     </head>
+
+                                     <tbody>
+                                             <tr> 
+                                             <td><a href ="exemplosrelatorios.html">assassinato</h1></a></td>
+                                             <td>01/03/2014 14:53:45</td>
+
+                                     </tr>
+
+                                     <tr class="active"> 
+                                             <td>Nome1</td>
+                                             <td>01/03/2014 08:22:45</td>
+
+                                     </tr>
+
+                                     <tr> 
+                                             <td>Nome2</td>
+                                             <td>02/03/2014 11:43:45</td>
+
+                                     </tr>
+
+                                     <tr class="active"> 
+                                             <td>Nome12</td>
+                                             <td>01/03/2014 14:53:45</td>
+
+                                     </tr>
+
+                                     <tr> 
+                                             <td>Nome35</td>
+                                             <td>01/03/2014 08:22:45</td>
+
+                                     </tr>
+
+                                     <tr class="active"> 
+                                             <td>Nome11</td>
+                                             <td>02/03/2014 11:43:45</td>
+
+                                     </tr>
+
+                                     <tr> 
+                                             <td>Nome22</td>
+                                             <td>02/12/2014 14:53:45</td>
+
+                                     </tr>
+
+                                     <tr class="active"> 
+                                             <td>Nome1</td>
+                                             <td>01/03/2014 08:22:45</td>
+
+                                     </tr>
+
+                                     <tr> 
+                                             <td>Nome2</td>
+                                             <td>02/03/2014 11:43:45</td>
+
+                                     </tr>			
+
+
+                                     <tr class="active"> 
+                                             <td>Nome4</td>
+                                             <td>01/03/2014 14:53:45</td>
+
+                                     </tr>
+
+                                     <tr> 
+                                             <td>Nome1</td>
+                                             <td>01/03/2014 08:22:45</td>
+
+                                     </tr>
+
+                                     <tr class="active"> 
+                                             <td>Nome2</td>
+                                             <td>02/03/2014 11:43:45</td>
+
+                                     </tr>
+
+                                     <tr> 
+                                             <td>Nome12</td>
+                                             <td>01/03/2014 14:53:45</td>
+
+                                     </tr>
+
+                                     <tr class="active"> 
+                                             <td>Nome35</td>
+                                             <td>01/03/2014 08:22:45</td>
+
+                                     </tr>
+
+                                     <tr> 
+                                             <td>Nome35</td>
+                                             <td>01/03/2014 08:22:45</td>
+
+                                     </tr>
+
+                                     <tr class="active"> 
+                                             <td>Nome11</td>
+                                             <td>02/03/2014 11:43:45</td>
+
+                                     </tr>
+
+                                     <tr> 
+                                             <td>Nome22</td>
+                                             <td>02/12/2014 14:53:45</td>
+
+                                     </tr>
+
+                                     <tr class="active"> 
+                                             <td>Nome1</td>
+                                             <td>01/03/2014 08:22:45</td>
+
+                                     </tr>
+
+                                     <tr> 
+                                             <td>Nome2</td>
+                                             <td>02/03/2014 11:43:45</td>
+                                     </tr>
+                                     </tbody>  
+                             </table>  
+
+                </div>
+            </div>
         
-        
-		
-        <div id="acessos" style="overflow: none; width: 550px;">
-            <h1>Últimos acessos</h1>
-			<table width="500px" class="table table-condensed"> 
-			 <thead>  
-			  <tr> 
-				<td> <b>  Usuário  </b></td>
-				<td><b>Entrada<b></td>
-				<td><b>Saída<b></td>
-			</tr>
-			 </thead> 
-				
-			<tbody>			 
-				<tr> 
-					<td>Nome4</td>
-					<td>01/03/2014 14:53:45</td>
-					<td> <"online"> </td>
-				</tr>
-					
-				<tr> 
-					<td>Nome1</td>
-					<td>01/03/2014 08:22:45</td>
-					<td>01/03/2014 08:34:23</td>
-				</tr>
-					
-				<tr> 
-					<td>Nome2</td>
-					<td>02/03/2014 11:43:45</td>
-					<td>02/03/2014 11:51:33</td>
-				</tr>
-				
-				<tr> 
-					<td>Nome12</td>
-					<td>01/03/2014 14:53:45</td>
-					<td> <"online"> </td>
-				</tr>
-					
-				<tr> 
-					<td>Nome35</td>
-					<td>01/03/2014 08:22:45</td>
-					<td>01/03/2014 08:34:23</td>
-				</tr>
-					
-			
-					
-				
-			
-				
-			
-				
-				<tr> 
-					
-				<tr> 
-					<td>Nome1</td>
-					<td>01/03/2014 08:22:45</td>
-					<td>01/03/2014 08:34:23</td>
-				</tr>
-					
-				<tr> 
-					<td>Nome2</td>
-					<td>02/03/2014 11:43:45</td>
-					<td>02/03/2014 11:51:33</td>
-				</tr>
-				
-				<tr> 
-					<td>Nome12</td>
-					<td>01/03/2014 14:53:45</td>
-					<td> <"online"> </td>
-				</tr>
-					
-				<tr> 
-					<td>Nome35</td>
-					<td>01/03/2014 08:22:45</td>
-					<td>01/03/2014 08:34:23</td>
-				</tr>
-					
-				<tr> 
-					<td>Nome11</td>
-					<td>02/03/2014 11:43:45</td>
-					<td>02/03/2014 11:51:33</td>
-				</tr>
-					
-				<tr> 
-					<td>Nome22</td>
-					<td>02/12/2014 14:53:45</td>
-					<td> <"online"> </td>
-				</tr>
-					
-				<tr> 
-					<td>Nome1</td>
-					<td>01/03/2014 08:22:45</td>
-					<td>01/03/2014 08:34:23</td>
-				</tr>
-					
-				<tr> 
-					<td>Nome2</td>
-					<td>02/03/2014 11:43:45</td>
-					<td>02/03/2014 11:51:33</td>
-				</tr>
-				
-					
-				<tr> 
-					<td>Nome4</td>
-					<td>01/03/2014 14:53:45</td>
-					<td> <"online"> </td>
-				</tr>
-					
-				<tr> 
-					<td>Nome1</td>
-					<td>01/03/2014 08:22:45</td>
-					<td>01/03/2014 08:34:23</td>
-				</tr>
-					
-				<tr> 
-					<td>Nome2</td>
-					<td>02/03/2014 11:43:45</td>
-					<td>02/03/2014 11:51:33</td>
-				</tr>
-				<tr> 
-					<td>Nome12</td>
-					<td>01/03/2014 14:53:45</td>
-					<td> <"online"> </td>
-				</tr>
-			
-					
-				<tr> 
-					<td>Nome1</td>
-					<td>01/03/2014 08:22:45</td>
-					<td>01/03/2014 08:34:23</td>
-				</tr>
-					
-				<tr> 
-					<td>Nome2</td>
-					<td>02/03/2014 11:43:45</td>
-					<td>02/03/2014 11:51:33</td>
-				</tr>
-				
-				
-			</table>
-        </tbody>  
+            
+	<div class="container1">	
+            <div id="acessos" style="overflow: auto; width: 550px; height: 200px;">
+                <h1>Últimos acessos</h1>
+                            <table width="500px" class="table table-condensed"> 
+                             <thead>  
+                              <tr> 
+                                    <td> <b>  Usuário  </b></td>
+                                    <td><b>Entrada<b></td>
+                                    <td><b>Saída<b></td>
+                            </tr>
+                             </thead> 
+
+                            <tbody>			 
+                                    <tr> 
+                                            <td>Nome4</td>
+                                            <td>01/03/2014 14:53:45</td>
+                                            <td> <"online"> </td>
+                                    </tr>
+
+                                    <tr> 
+                                            <td>Nome1</td>
+                                            <td>01/03/2014 08:22:45</td>
+                                            <td>01/03/2014 08:34:23</td>
+                                    </tr>
+
+                                    <tr> 
+                                            <td>Nome2</td>
+                                            <td>02/03/2014 11:43:45</td>
+                                            <td>02/03/2014 11:51:33</td>
+                                    </tr>
+
+                                    <tr> 
+                                            <td>Nome12</td>
+                                            <td>01/03/2014 14:53:45</td>
+                                            <td> <"online"> </td>
+                                    </tr>
+
+                                    <tr> 
+                                            <td>Nome35</td>
+                                            <td>01/03/2014 08:22:45</td>
+                                            <td>01/03/2014 08:34:23</td>
+                                    </tr>
+
+
+
+
+
+
+
+
+                                    <tr> 
+
+                                    <tr> 
+                                            <td>Nome1</td>
+                                            <td>01/03/2014 08:22:45</td>
+                                            <td>01/03/2014 08:34:23</td>
+                                    </tr>
+
+                                    <tr> 
+                                            <td>Nome2</td>
+                                            <td>02/03/2014 11:43:45</td>
+                                            <td>02/03/2014 11:51:33</td>
+                                    </tr>
+
+                                    <tr> 
+                                            <td>Nome12</td>
+                                            <td>01/03/2014 14:53:45</td>
+                                            <td> <"online"> </td>
+                                    </tr>
+
+                                    <tr> 
+                                            <td>Nome35</td>
+                                            <td>01/03/2014 08:22:45</td>
+                                            <td>01/03/2014 08:34:23</td>
+                                    </tr>
+
+                                    <tr> 
+                                            <td>Nome11</td>
+                                            <td>02/03/2014 11:43:45</td>
+                                            <td>02/03/2014 11:51:33</td>
+                                    </tr>
+
+                                    <tr> 
+                                            <td>Nome22</td>
+                                            <td>02/12/2014 14:53:45</td>
+                                            <td> <"online"> </td>
+                                    </tr>
+
+                                    <tr> 
+                                            <td>Nome1</td>
+                                            <td>01/03/2014 08:22:45</td>
+                                            <td>01/03/2014 08:34:23</td>
+                                    </tr>
+
+                                    <tr> 
+                                            <td>Nome2</td>
+                                            <td>02/03/2014 11:43:45</td>
+                                            <td>02/03/2014 11:51:33</td>
+                                    </tr>
+
+
+                                    <tr> 
+                                            <td>Nome4</td>
+                                            <td>01/03/2014 14:53:45</td>
+                                            <td> <"online"> </td>
+                                    </tr>
+
+                                    <tr> 
+                                            <td>Nome1</td>
+                                            <td>01/03/2014 08:22:45</td>
+                                            <td>01/03/2014 08:34:23</td>
+                                    </tr>
+
+                                    <tr> 
+                                            <td>Nome2</td>
+                                            <td>02/03/2014 11:43:45</td>
+                                            <td>02/03/2014 11:51:33</td>
+                                    </tr>
+                                    <tr> 
+                                            <td>Nome12</td>
+                                            <td>01/03/2014 14:53:45</td>
+                                            <td> <"online"> </td>
+                                    </tr>
+
+
+                                    <tr> 
+                                            <td>Nome1</td>
+                                            <td>01/03/2014 08:22:45</td>
+                                            <td>01/03/2014 08:34:23</td>
+                                    </tr>
+
+                                    <tr> 
+                                            <td>Nome2</td>
+                                            <td>02/03/2014 11:43:45</td>
+                                            <td>02/03/2014 11:51:33</td>
+                                    </tr>
+
+
+                            </table>
+            </tbody>  
       
         </div> 
        </div>
@@ -316,5 +342,8 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
+		
+		<script type="text/javascript" src="//assets.locaweb.com.br/locastyle/2.0.6/javascripts/locastyle.js"></script>
+		<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     </body>
 </html>

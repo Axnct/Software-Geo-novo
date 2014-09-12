@@ -55,15 +55,14 @@ img{
 	text-align:center;
 }
 
-#buscar{
-    float: left;
-    width: 530px;
+#buscar{    
+    width: 100%;
     height: auto;
-    min-height: 500px;
+    min-height: 260px;
     margin-top: 5px;
     margin-bottom: 5px;
     background-color: #EDEDED;
     margin-right: 5px;    
-	text-align:center;
+    text-align:center;
 }
 
