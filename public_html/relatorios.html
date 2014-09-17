@@ -32,46 +32,79 @@
         <!-- INICIO CONTEUDO DO SITE -->
         <div class="container">            
             <div class="form-group">
-                     <label for="exampleInputEmail1">Insira a data inicial  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspInsira a data final   </label>
-                    <form>
-                        <div class="row date-range">
-                            <div class="col-lg-3">
-                                <label for="example1" class="sr-only">Data</label>
-                                    <div class="input-group datepicker">
-                                         <input class="form-control date-mask from-date" placeholder="dd/mm/aaaa" type="text">
-                                    </div>
-                            </div>
-                            
-                            <div class="col-lg-3">
-                                <label for="example1" class="sr-only">Data</label>
-                                <div class="input-group datepicker">
-                                    <input class="form-control date-mask to-date" placeholder="dd/mm/aaaa" type="text">
-                                </div>
-                                
-                            </div>
-                            
-                        </div>
-                    </form>
+                   <nav class="navbar navbar-default" role="navigation">
+                     <div class="container-fluid">
+                       <!-- Brand and toggle get grouped for better mobile display -->
+                       <div class="navbar-header">
+                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                           <span class="sr-only">Toggle navigation</span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                         </button>
+                         <a class="navbar-brand" href="#">Brand</a>
+                       </div>
+
+                       <!-- Collect the nav links, forms, and other content for toggling -->
+                       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                         <ul class="nav navbar-nav">
+                           <li class="active"><a href="#">Link</a></li>
+                           <li><a href="#">Link</a></li>
+                           <li class="dropdown">
+                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                             <ul class="dropdown-menu" role="menu">
+                               <li><a href="#">Action</a></li>
+                               <li><a href="#">Another action</a></li>
+                               <li><a href="#">Something else here</a></li>
+                               <li class="divider"></li>
+                               <li><a href="#">Separated link</a></li>
+                               <li class="divider"></li>
+                               <li><a href="#">One more separated link</a></li>
+                             </ul>
+                           </li>
+                         </ul>
+                         <form class="navbar-form navbar-left" role="search">
+                           <div class="form-group">
+                             <input type="text" class="form-control" placeholder="Search">
+                           </div>
+                           <button type="submit" class="btn btn-default">Submit</button>
+                         </form>
+                         <ul class="nav navbar-nav navbar-right">
+                           <li><a href="#">Link</a></li>
+                           <li class="dropdown">
+                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                                <ul class="dropdown-menu" role="menu">
+                                  <li><a href="#">Action</a></li>
+                                  <li><a href="#">Another action</a></li>
+                                  <li><a href="#">Something else here</a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="#">Separated link</a></li>
+                                </ul>
+                           </li>
+                         </ul>
+                       </div><!-- /.navbar-collapse -->
+                     </div><!-- /.container-fluid -->
+                   </nav>
         	
             </div>
            
         </div>
         
        <div class="container">
-            <div id="relatorios" style="overflow: auto; width: 550px; height: 200px;">
+            <div id="relatorios" style="overflow: auto; width: 100%; max-height: 200px;">
                  <h1>RELATÓRIOS</h1>
-                             <table width="500px"  class="table table-condensed">
+                             <table class="table table-condensed">
 
                                      <thead>
                                              <tr class="active"> 
-                                             <td> <b>  Causa da Busca  </b></td>
+                                             <td> <b>  Nome da Busca  </b></td>
                                              <td><b>Data <b></td>
                                              </tr>
                                      </head>
 
                                      <tbody>
                                              <tr> 
-                                             <td><a href ="exemplosrelatorios.html">assassinato</h1></a></td>
+                                             <td><a href ="exemplosrelatorios.html">assassinato assassinatoassassinatoassassinatoassassinato</a></td>
                                              <td>01/03/2014 14:53:45</td>
 
                                      </tr>
@@ -188,147 +221,6 @@
 
                 </div>          
             
-            <div id="acessos" style="overflow: auto; width: 550px; height: 200px;">
-                <h1>Últimos acessos</h1>
-                            <table width="500px" class="table table-condensed"> 
-                             <thead>  
-                              <tr> 
-                                    <td> <b>  Usuário  </b></td>
-                                    <td><b>Entrada<b></td>
-                                    <td><b>Saída<b></td>
-                            </tr>
-                             </thead> 
-
-                            <tbody>			 
-                                    <tr> 
-                                            <td>Nome4</td>
-                                            <td>01/03/2014 14:53:45</td>
-                                            <td> <"online"> </td>
-                                    </tr>
-
-                                    <tr> 
-                                            <td>Nome1</td>
-                                            <td>01/03/2014 08:22:45</td>
-                                            <td>01/03/2014 08:34:23</td>
-                                    </tr>
-
-                                    <tr> 
-                                            <td>Nome2</td>
-                                            <td>02/03/2014 11:43:45</td>
-                                            <td>02/03/2014 11:51:33</td>
-                                    </tr>
-
-                                    <tr> 
-                                            <td>Nome12</td>
-                                            <td>01/03/2014 14:53:45</td>
-                                            <td> <"online"> </td>
-                                    </tr>
-
-                                    <tr> 
-                                            <td>Nome35</td>
-                                            <td>01/03/2014 08:22:45</td>
-                                            <td>01/03/2014 08:34:23</td>
-                                    </tr>
-
-
-
-
-
-
-
-
-                                    <tr> 
-
-                                    <tr> 
-                                            <td>Nome1</td>
-                                            <td>01/03/2014 08:22:45</td>
-                                            <td>01/03/2014 08:34:23</td>
-                                    </tr>
-
-                                    <tr> 
-                                            <td>Nome2</td>
-                                            <td>02/03/2014 11:43:45</td>
-                                            <td>02/03/2014 11:51:33</td>
-                                    </tr>
-
-                                    <tr> 
-                                            <td>Nome12</td>
-                                            <td>01/03/2014 14:53:45</td>
-                                            <td> <"online"> </td>
-                                    </tr>
-
-                                    <tr> 
-                                            <td>Nome35</td>
-                                            <td>01/03/2014 08:22:45</td>
-                                            <td>01/03/2014 08:34:23</td>
-                                    </tr>
-
-                                    <tr> 
-                                            <td>Nome11</td>
-                                            <td>02/03/2014 11:43:45</td>
-                                            <td>02/03/2014 11:51:33</td>
-                                    </tr>
-
-                                    <tr> 
-                                            <td>Nome22</td>
-                                            <td>02/12/2014 14:53:45</td>
-                                            <td> <"online"> </td>
-                                    </tr>
-
-                                    <tr> 
-                                            <td>Nome1</td>
-                                            <td>01/03/2014 08:22:45</td>
-                                            <td>01/03/2014 08:34:23</td>
-                                    </tr>
-
-                                    <tr> 
-                                            <td>Nome2</td>
-                                            <td>02/03/2014 11:43:45</td>
-                                            <td>02/03/2014 11:51:33</td>
-                                    </tr>
-
-
-                                    <tr> 
-                                            <td>Nome4</td>
-                                            <td>01/03/2014 14:53:45</td>
-                                            <td> <"online"> </td>
-                                    </tr>
-
-                                    <tr> 
-                                            <td>Nome1</td>
-                                            <td>01/03/2014 08:22:45</td>
-                                            <td>01/03/2014 08:34:23</td>
-                                    </tr>
-
-                                    <tr> 
-                                            <td>Nome2</td>
-                                            <td>02/03/2014 11:43:45</td>
-                                            <td>02/03/2014 11:51:33</td>
-                                    </tr>
-                                    <tr> 
-                                            <td>Nome12</td>
-                                            <td>01/03/2014 14:53:45</td>
-                                            <td> <"online"> </td>
-                                    </tr>
-
-
-                                    <tr> 
-                                            <td>Nome1</td>
-                                            <td>01/03/2014 08:22:45</td>
-                                            <td>01/03/2014 08:34:23</td>
-                                    </tr>
-
-                                    <tr> 
-                                            <td>Nome2</td>
-                                            <td>02/03/2014 11:43:45</td>
-                                            <td>02/03/2014 11:51:33</td>
-                                    </tr>
-
-
-                            </table>
-            </tbody>  
-      
-        </div> 
        </div>
         
         
