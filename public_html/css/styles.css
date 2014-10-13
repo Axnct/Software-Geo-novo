@@ -11,7 +11,12 @@ body {
 img{
     opacity: 0.3;
 }
-            
+
+th,
+td {  
+  text-align: left;
+  padding: 10px;
+}           
             
 #relatorios{
     float: left;
