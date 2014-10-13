@@ -51,46 +51,35 @@
                            <span class="icon-bar"></span>
                            <span class="icon-bar"></span>
                          </button>
-                         <a class="navbar-brand" href="#">Brand</a>
+                         <a class="navbar-brand" href="#">Buscar</a>
                        </div>
 
                        <!-- Collect the nav links, forms, and other content for toggling -->
                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                         <ul class="nav navbar-nav">
-                           <li class="active"><a href="#">Link</a></li>
-                           <li><a href="#">Link</a></li>
-                           <li class="dropdown">
-                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-                             <ul class="dropdown-menu" role="menu">
-                               <li><a href="#">Action</a></li>
-                               <li><a href="#">Another action</a></li>
-                               <li><a href="#">Something else here</a></li>
-                               <li class="divider"></li>
-                               <li><a href="#">Separated link</a></li>
-                               <li class="divider"></li>
-                               <li><a href="#">One more separated link</a></li>
-                             </ul>
-                           </li>
-                         </ul>
-                         <form class="navbar-form navbar-left" role="search">
+                        <form class="navbar-form navbar-left" role="search">
                            <div class="form-group">
-                             <input type="text" class="form-control" placeholder="Search">
-                           </div>
-                           <button type="submit" class="btn btn-default">Submit</button>
+                             <input type="text" class="form-control" placeholder="Palavra Chave">                              
+                           </div>                           
                          </form>
-                         <ul class="nav navbar-nav navbar-right">
-                           <li><a href="#">Link</a></li>
-                           <li class="dropdown">
-                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-                                <ul class="dropdown-menu" role="menu">
-                                  <li><a href="#">Action</a></li>
-                                  <li><a href="#">Another action</a></li>
-                                  <li><a href="#">Something else here</a></li>
-                                  <li class="divider"></li>
-                                  <li><a href="#">Separated link</a></li>
-                                </ul>
-                           </li>
-                         </ul>
+                         <form>
+                            <div class="row date-range">
+                                <a class="navbar-brand" href="#">De</a>
+                              <div class="col-lg-3">
+                                <label for="example1" class="sr-only">Data</label>
+                                <div class="input-group datepicker" style="margin-top: 8px;">
+                                  <input type="text" class="form-control date-mask from-date" placeholder="dd/mm/aaaa">
+                                </div>
+                              </div>
+                                <a class="navbar-brand" href="#">Até</a>
+                              <div class="col-lg-3">
+                                <label for="example1" class="sr-only">Data</label>
+                                <div class="input-group datepicker" style="margin-top: 8px;">
+                                  <input type="text" class="form-control date-mask to-date" placeholder="dd/mm/aaaa">
+                                </div>
+                              </div>
+                                <button type="submit" class="btn btn-default" style="margin: 7px; width: 120px; height: 35px;">Buscar</button>
+                            </div>
+                          </form>                           
                        </div><!-- /.navbar-collapse -->
                      </div><!-- /.container-fluid -->
                    </nav>
