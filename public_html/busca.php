@@ -14,10 +14,10 @@
         <link href="css/styles.css" rel="stylesheet">   
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
-        <!-- Locastyle -->
+    <!--         Locastyle -->
         <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="//assets.locaweb.com.br/locastyle/2.0.6/stylesheets/locastyle.css">
-        <!-- Fim Locastyle -->
+         
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>        
         
@@ -57,58 +57,83 @@
         <![endif]-->
         
         <div class="container">
-            <iframe src="menu.html" scrolling="no" frameborder="0" style="width: 100%;max-height: 60px;"></iframe>
+            <?php
+            include ("menu.php");
+            ?>
         </div>
         
         <!-- INICIO CONTEUDO DO SITE -->
-        <div class="container">        
+        <div class="container">
+            
+            
             <div id="buscar">
-                <h1>Dados Geográficos</h1>
+                
+                <!-- Button trigger modal -->
+                <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Inserir Dados</a>
 
-                    <div class="add_field_button">
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                                <div class="modal-content">
+                                        <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                <h4 class="modal-title" id="myModalLabel">Realizar Busca</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                                <div class="add_field_button">
                                     <button type="button" class="btn btn-primary" style="float: right; margin: 5px; background: cadetblue;">Acrescentar</button>        
-                    </div>
-                       <form action="/servidor/salvar" method="post" disabled="" class="ls-form-text">
-                            <input type="hidden" name="token" value="ehOCabraMesmo">
-                            <div class="well well-sm clearfix ls-table-group-actions">
-                                    <p class="d-inline-block">
-                                            <strong class="counterChecks">0</strong>
-                                            <span class="counterChecksStr">item selecionado</span>
-                                    </p>
-                                    <div class="actions pull-right">                                       
-                                            <button type="button" class="btn btn-default">
-                                                    <a href="#" class="remove_field">Excluir</a>
-                                            </button>
                                     </div>
-                            </div>
-                            <table class="table ls-table">
-                                    <thead>
-                                            <tr>
-                                                    <th class="txt-center"><input type="checkbox"></th>
-                                                    <th class="ls-nowrap col-xs-3">Longitude</th>
-                                                    <th class="hidden-xs">Latitude</th>
-                                                    <th class="hidden-xs">Azimute</th>
-                                                    <th class="hidden-xs">Raio</th>
-                                            </tr>
-                                    </thead>
-                                    <tbody class="input_fields_wrap">                                
-                                            <tr>
-                                                    <td><input name="id" value="1" type="checkbox"></td>
-                                                    <td> <div><input class="form-control input-lg" type="text" placeholder="-23.4467767" name="mytext[]" style="border: 1px solid grey;"></div></td>
-                                                    <td> <div><input class="form-control input-lg" type="text" placeholder="-51.9137259" name="mytext[]" style="border: 1px solid grey;"></div></td>
-                                                    <td> <div><input class="form-control input-lg" type="text" placeholder="120º" style="border: 1px solid grey;"></div></td>                                                                                              
-                                                    <td>
-                                                        <select name="select-simples" class="ls-select">
-                                                                <option value="1km">1km</option>
-                                                                <option value="2km">2km</option>
-                                                                <option value="3km">3km</option>
-                                                                <option value="5km">5km</option>
-                                                        </select>                                                 
-                                                   </td>
-                                            </tr>                                                                            
-                                    </tbody>
-                            </table>
-                    </form>
+                                       <form action="/servidor/salvar" method="post" disabled="" class="ls-form-text">
+                                            <input type="hidden" name="token" value="ehOCabraMesmo">
+                                            <div class="well well-sm clearfix ls-table-group-actions">
+                                                    <p class="d-inline-block">
+                                                            <strong class="counterChecks">0</strong>
+                                                            <span class="counterChecksStr">item selecionado</span>
+                                                    </p>
+                                                    <div class="actions pull-right">                                       
+                                                            <button type="button" class="btn btn-default">
+                                                                    <a href="#" class="remove_field">Excluir</a>
+                                                            </button>
+                                                    </div>
+                                            </div>
+                                            <table class="table ls-table">
+                                                    <thead>
+                                                            <tr>
+                                                                    <th class="txt-center"><input type="checkbox"></th>
+                                                                    <th class="ls-nowrap col-xs-3">Longitude</th>
+                                                                    <th class="hidden-xs">Latitude</th>
+                                                                    <th class="hidden-xs">Azimute</th>
+                                                                    <th class="hidden-xs">Raio</th>
+                                                            </tr>
+                                                    </thead>
+                                                    <tbody class="input_fields_wrap">                                
+                                                            <tr>
+                                                                    <td><input name="id" value="1" type="checkbox"></td>
+                                                                    <td> <div><input class="form-control input-lg" type="text" placeholder="-23.4467767" name="mytext[]" style="border: 1px solid grey;"></div></td>
+                                                                    <td> <div><input class="form-control input-lg" type="text" placeholder="-51.9137259" name="mytext[]" style="border: 1px solid grey;"></div></td>
+                                                                    <td> <div><input class="form-control input-lg" type="text" placeholder="120º" style="border: 1px solid grey;"></div></td>                                                                                              
+                                                                    <td>
+                                                                        <select name="select-simples" class="ls-select">
+                                                                                <option value="1km">1km</option>
+                                                                                <option value="2km">2km</option>
+                                                                                <option value="3km">3km</option>
+                                                                                <option value="5km">5km</option>
+                                                                        </select>                                                 
+                                                                   </td>
+                                                            </tr>                                                                            
+                                                    </tbody>
+                                            </table>
+                                    </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                                <button type="button" class="btn btn-primary">Buscar</button>
+                                        </div>
+                                </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+
+                    
 
              <button type="button" class="btn btn-success btn-lg">Buscar</button>
 
@@ -143,9 +168,10 @@
                 </div><!-- /.modal -->  
 
             </div>
+            
             <div id="mapa" style="width: 100%; min-height: 300px; height: 450px;">           
-                <div> <!-- parte do mapa -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m22!1m12!1m3!1d3660.3922513674174!2d-51.91447737794699!3d-23.446311515885675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m7!1i0!3e6!4m0!4m3!3m2!1d-23.446776699999997!2d-51.913725899999996!5e0!3m2!1sen!2s!4v1408557579648" width="98%" height="440" frameborder="0" style="border: 3px solid grey; margin: 5px;"></iframe>
+                <div style="border: 2px solid grey;"> <!-- parte do mapa -->
+                    <img style="opacity: 1; width: 100%;" src="img/mapa.jpg">
                 </div>
             </div>
         </div>
@@ -158,8 +184,9 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>        
         <script src="js/main.js"></script>
-         <!-- Locastyle -->
+        <!--          Locastyle -->
         <script type="text/javascript" src="//assets.locaweb.com.br/locastyle/2.0.6/javascripts/locastyle.js"></script>
+          <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
         <!-- Fim Locastyle -->
        
     </body>

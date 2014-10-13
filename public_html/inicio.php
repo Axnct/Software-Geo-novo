@@ -29,7 +29,9 @@
         <![endif]-->        
        
         <div class="container">
-            <iframe src="menu.html" scrolling="no" frameborder="0" style="width: 100%;max-height: 60px;"></iframe>
+            <?php
+            include ("menu.php");
+            ?>
         </div>
         
         
@@ -37,9 +39,9 @@
         <div class="container">
         <div id="relatorios">
             <h2>Últimos Relatórios</h2>
-            <table class="table table-condensed">
+            <table class="table table-hover">
                 <thead>
-                  <tr class="active">
+                  <tr>
                     <th style="text-align: center;">#</th>
                     <th style="text-align: center;">Relatório</th>
                     <th style="text-align: center;">Data de criação</th>                    
@@ -51,7 +53,7 @@
                     <td>Relatório 1</td>
                     <td>10/10/2014</td>                    
                   </tr>
-                  <tr class="active">
+                  <tr>
                     <td>2</td>
                     <td>Relatório 2</td>
                     <td>10/10/2014</td>                   
@@ -60,27 +62,7 @@
                     <td>3</td>
                     <td>Relatório 1</td>
                     <td>10/10/2014</td>                   
-                  </tr>
-                  <tr class="active">
-                    <td>4</td>
-                    <td>Relatório 2</td>
-                    <td>10/10/2014</td>                   
-                  </tr>
-                  <tr>
-                    <td>5</td>
-                    <td>Relatório 3</td>
-                    <td>10/10/2014</td>                   
                   </tr>                 
-                  <tr class="active">
-                    <td>6</td>
-                    <td>Relatório 2</td>
-                    <td>10/10/2014</td>                   
-                  </tr>
-                  <tr>
-                    <td>7</td>
-                    <td>Relatório 3</td>
-                    <td>10/10/2014</td>                   
-                  </tr>
                 </tbody>
               </table>
             
@@ -89,7 +71,7 @@
             
         <div id="acessos">
             <h2>Últimos Acessos</h2>
-            <table class="table table-condensed">
+            <table class="table table-hover">
                 <thead>
                   <tr class="active">
                     <th style="text-align: center;">#</th>
@@ -101,40 +83,22 @@
                 <tbody>
                   <tr>
                     <td>1</td>
-                    <td>usuario1</td>
+                    <td>Yan (ADM)</td>
                     <td>10/10/2014 - 15:33</td>                    
                     <td>Offline</td>                    
                   </tr>
-                  <tr class="active">
+                  <tr>
                     <td>2</td>
-                    <td>usuario1</td>
-                    <td>10/10/2014 - 15:33</td>                    
+                    <td>Yan (ADM)</td>
+                    <td>10/10/2014 - 16:53</td>                    
                     <td>Offline</td>                    
                   </tr>                 
                   <tr>
                     <td>3</td>
-                    <td>usuario1</td>
-                    <td>10/10/2014 - 15:33</td>                    
+                    <td>Yan (ADM)</td>
+                    <td>11/10/2014 - 00:25</td>                    
                     <td>Offline</td>                    
-                  </tr>
-                  <tr class="active">
-                    <td>4</td>
-                    <td>usuario1</td>
-                    <td>10/10/2014 - 15:33</td>                    
-                    <td>Offline</td>                    
-                  </tr>
-                  <tr>
-                    <td>5</td>
-                    <td>usuario1</td>
-                    <td>10/10/2014 - 15:33</td>                    
-                    <td>Offline</td>                    
-                  </tr>
-                  <tr class="active">
-                    <td>6</td>
-                    <td>usuario1</td>
-                    <td>10/10/2014 - 15:33</td>                    
-                    <td>Offline</td>                    
-                  </tr> 
+                  </tr>                  
               </table>
         </div>      
         </div>

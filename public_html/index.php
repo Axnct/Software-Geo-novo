@@ -37,7 +37,7 @@
                           <input type="password" class="form-control input-lg" placeholder="Senha">
                         </div>
                         <div class="form-group">
-                            <a class="btn btn-primary btn-lg btn-block" href="inicio.html">Acessar</a>                 
+                            <a class="btn btn-primary btn-lg btn-block" href="inicio.php">Acessar</a>                 
                         </div>
                       </form>
                   </div>
@@ -45,14 +45,24 @@
                       <div class="col-md-12">
                         <span class="pull-right" data-toggle="modal" data-target=".bs-example-modal-sm"><a href="#">Esqueceu sua senha?</a></span>
                         <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                          <div class="modal-dialog modal-sm">
-                            <div class="modal-content">
+                          <div class="modal-dialog">
+                              <div class="modal-content" style="background-color: rgb(241, 241, 241);">                                
                                 <form role="form">
-                                    <div class="form-group">
-                                      <label for="exampleInputEmail1" style="margin: 12px;">Insira seu endereço de Email</label>
-                                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" style="margin-left: 5px; width: 290px;">
-                                    </div>
-                                      <button type="submit" class="btn btn-default" style="margin-right: 20px; margin-bottom: 10px;">Enviar</button>
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+                                        <h4 class="modal-title" style="float: left; line-height: 0;">Esqueceu sua senha?</h4>
+                                      </div>
+                                      <div class="modal-body">                                        
+                                          <div class="form-group">
+                                            <label for="exampleInputEmail1" style="margin: 12px; float: left;">Insira seu endereço de Email</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" style="margin-left: 5px; width: 290px;">
+                                          </div> 
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                        <button type="button" class="btn btn-success">Enviar</button>
+                                      </div>
+                                                                         
                                 </form>
                             </div>
                           </div>

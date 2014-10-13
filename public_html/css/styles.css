@@ -1,7 +1,6 @@
 .modal-footer {   border-top: 0px; }
 
-body {
-     margin-top: 5px;
+body {    
      background: url(../img/maap.jpg) no-repeat center center fixed;  /* PLANO DE FUNDO */
      background-size: cover; /*Css padrão*/
     -webkit-background-size: cover; /*Css safari e chrome*/

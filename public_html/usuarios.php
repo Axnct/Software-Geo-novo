@@ -14,7 +14,7 @@
         <link href="css/styles.css" rel="stylesheet">     
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
-        <!-- Locastyle -->
+<!--         Locastyle -->
         <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="//assets.locaweb.com.br/locastyle/2.0.6/stylesheets/locastyle.css">
         <!-- Fim Locastyle -->
@@ -27,13 +27,15 @@
         <![endif]-->
         
         <div class="container"> <!-- menu -->
-            <iframe src="menu.html" scrolling="no" frameborder="0" style="width: 100%;max-height: 60px;"></iframe>
+            <?php
+            include ("menu.php");
+            ?>
         </div>
         
         <!-- INICIO CONTEUDO DO SITE -->		
         <div class="container">
 			<div style="text-align: -webkit-center;">
-				<button data-toggle="modal" href="#myModal" class="btn btn-success  ico-user " href="#" style="margin-bottom: 5px;">Adicionar Usuário</button>
+				<button data-toggle="modal" href="#myModal" class="btn btn-success ico-user " href="#" style="margin-bottom: 5px;">Adicionar Usuário</button>
                                                                        
 
                                     <!-- Modal -->
@@ -48,10 +50,10 @@
                                                                 <form role="form">
                                                                     <fieldset>
                                                                             <div class="form-group">
-                                                                                    <label for="exampleInputEmail1">Nome</label>
+                                                                                    <label for="exampleInputEmail1" style="float: left;">Nome</label>
                                                                                     <input class="form-control" placeholder="Insira seu nome aqui">
                                                                                     <p class="help-block">O Nome será usado para efetuar o login.</p>
-                                                                                    <label for="exampleInputEmail1">Email</label>
+                                                                                    <label for="exampleInputEmail1" style="float: left;">Email</label>
                                                                                     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Insira seu nome aqui">
                                                                             </div>
 <!--                                                                            <div class="form-group">
@@ -62,9 +64,9 @@
                                                                                     </select>
                                                                             </div>-->
                                                                             <div class="form-group">
-                                                                                    <label for="exampleInputPassword1">Senha</label>
+                                                                                    <label for="exampleInputPassword1" style="float: left;">Senha</label>
                                                                                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
-                                                                                    <label for="exampleInputPassword1">Confirmar Senha</label>
+                                                                                    <label for="exampleInputPassword1" style="float: left; margin-top: 3px;">Confirmar Senha</label>
                                                                                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
                                                                             </div>
                                                                     </fieldset>          
@@ -174,11 +176,37 @@
                                             <h4 class="modal-title" id="myModalLabel">Título do Modal</h4>
                                     </div>
                                     <div class="modal-body">
-                                            ...
+                                                          <div class="modal-body">
+                                                                <form role="form">
+                                                                    <fieldset>
+                                                                            <div class="form-group">
+                                                                                    <label for="exampleInputEmail1">Nome</label>
+                                                                                    <input class="ls-form-text" placeholder="Insira seu nome aqui">
+                                                                                    <p class="help-block">O Nome será usado para efetuar o login.</p>
+                                                                                    <label for="exampleInputEmail1">Email</label>
+                                                                                    <input type="email" class="ls-form-text" id="exampleInputEmail1" placeholder="Insira seu nome aqui">
+                                                                            </div>
+<!--                                                                            <div class="form-group">
+                                                                                    <label for="exampleSelect">Tipo de Acesso</label>
+                                                                                    <select id="exampleSelect" class="form-control">
+                                                                                            <option value="">Administrador</option>
+                                                                                            <option value="">Pesquisador</option>
+                                                                                    </select>
+                                                                            </div>-->
+                                                                            <div class="form-group">
+                                                                                    <label for="exampleInputPassword1">Senha</label>
+                                                                                    <input type="password" class="ls-form-text" id="exampleInputPassword1" placeholder="Senha">
+                                                                                    <label for="exampleInputPassword1">Confirmar Senha</label>
+                                                                                    <input type="password" class="ls-form-text'" id="exampleInputPassword1" placeholder="Senha">
+                                                                            </div>
+                                                                    </fieldset>          
+                                                                </form>     
+                                                            </div>
                                     </div>
                                     <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal"><span class="glyphicon-icon glyphicon-remove">Desabilitar Usuário</span></button>
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                                            <button type="button" class="btn btn-primary">Salvar</button>
+                                            <button type="button" class="btn btn-success">Salvar</button>
                                     </div>
                             </div><!-- /.modal-content -->
                     </div><!-- /.modal-dialog -->
@@ -191,5 +219,10 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
+        
+            <!--         Locastyle -->
+        <script type="text/javascript" src="//assets.locaweb.com.br/locastyle/2.0.6/javascripts/locastyle.js"></script>
+	<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        
     </body>
 </html>

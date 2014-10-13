@@ -23,8 +23,10 @@
             <p class="browsehappy">Navegador muito<strong>antigo</strong>. Por favor <a href="http://browsehappy.com/">atualize seu navegador</a>.</p>
         <![endif]-->
         
-		<div class="container"> <!-- menu -->
-            <iframe src="menu.html" scrolling="no" frameborder="0" style="width: 100%;max-height: 60px;"></iframe>
+	<div class="container"> <!-- menu -->
+            <?php
+            include ("menu.php");
+            ?>
         </div>
         
         <!-- INICIO CONTEUDO DO SITE -->

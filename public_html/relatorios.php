@@ -15,18 +15,27 @@
         <link href="css/styles.css" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <!-- locastyle -->
 	<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="//assets.locaweb.com.br/locastyle/2.0.6/stylesheets/locastyle.css">
-
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <!-- fim locastyle -->
+        <!-- Redu Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap-redu.css">
+<!--        <link rel="stylesheet" href="css/docs.css">-->
+        <link rel="stylesheet" href="docs/assets/css/vendor/google-code-prettify.min.css">
+        <script src="js/vendor/modernizr.js"></script>
+<!--        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>-->
+        
     </head>
-    <body>
+    <body style="padding-top: 0px;">
         <!--[if lt IE 7]>
             <p class="browsehappy">Navegador muito<strong>antigo</strong>. Por favor <a href="http://browsehappy.com/">atualize seu navegador</a>.</p>
         <![endif]-->
         
         <div class="container"> <!-- menu -->
-            <iframe src="menu.html" scrolling="no" frameborder="0" style="width: 100%;max-height: 60px;"></iframe>
+            <?php
+            include ("menu.php");
+            ?>
         </div>
         
         <!-- INICIO CONTEUDO DO SITE -->
@@ -93,131 +102,32 @@
        <div class="container">
             <div id="relatorios" style="overflow: auto; width: 100%; max-height: 200px;">
                  <h1>RELATÓRIOS</h1>
-                             <table class="table table-condensed">
+                            <div class="span16">
+                             <table class="table-with-borderradius table-with-link">
 
                                      <thead>
                                              <tr class="active"> 
-                                             <td> <b>  Nome da Busca  </b></td>
+                                             <td><b>Nome da Busca</b></td>
                                              <td><b>Data <b></td>
                                              </tr>
                                      </head>
 
                                      <tbody>
                                              <tr> 
-                                             <td><a href ="exemplosrelatorios.html">assassinato assassinatoassassinatoassassinatoassassinato</a></td>
+                                             <td><a href ="exemplosrelatorios.html">Relatório 1</a></td>
                                              <td>01/03/2014 14:53:45</td>
 
                                      </tr>
 
                                      <tr class="active"> 
-                                             <td>Nome1</td>
+                                         <td><a href="#">Relatório 2</a></td>
                                              <td>01/03/2014 08:22:45</td>
 
                                      </tr>
-
-                                     <tr> 
-                                             <td>Nome2</td>
-                                             <td>02/03/2014 11:43:45</td>
-
-                                     </tr>
-
-                                     <tr class="active"> 
-                                             <td>Nome12</td>
-                                             <td>01/03/2014 14:53:45</td>
-
-                                     </tr>
-
-                                     <tr> 
-                                             <td>Nome35</td>
-                                             <td>01/03/2014 08:22:45</td>
-
-                                     </tr>
-
-                                     <tr class="active"> 
-                                             <td>Nome11</td>
-                                             <td>02/03/2014 11:43:45</td>
-
-                                     </tr>
-
-                                     <tr> 
-                                             <td>Nome22</td>
-                                             <td>02/12/2014 14:53:45</td>
-
-                                     </tr>
-
-                                     <tr class="active"> 
-                                             <td>Nome1</td>
-                                             <td>01/03/2014 08:22:45</td>
-
-                                     </tr>
-
-                                     <tr> 
-                                             <td>Nome2</td>
-                                             <td>02/03/2014 11:43:45</td>
-
-                                     </tr>			
-
-
-                                     <tr class="active"> 
-                                             <td>Nome4</td>
-                                             <td>01/03/2014 14:53:45</td>
-
-                                     </tr>
-
-                                     <tr> 
-                                             <td>Nome1</td>
-                                             <td>01/03/2014 08:22:45</td>
-
-                                     </tr>
-
-                                     <tr class="active"> 
-                                             <td>Nome2</td>
-                                             <td>02/03/2014 11:43:45</td>
-
-                                     </tr>
-
-                                     <tr> 
-                                             <td>Nome12</td>
-                                             <td>01/03/2014 14:53:45</td>
-
-                                     </tr>
-
-                                     <tr class="active"> 
-                                             <td>Nome35</td>
-                                             <td>01/03/2014 08:22:45</td>
-
-                                     </tr>
-
-                                     <tr> 
-                                             <td>Nome35</td>
-                                             <td>01/03/2014 08:22:45</td>
-
-                                     </tr>
-
-                                     <tr class="active"> 
-                                             <td>Nome11</td>
-                                             <td>02/03/2014 11:43:45</td>
-
-                                     </tr>
-
-                                     <tr> 
-                                             <td>Nome22</td>
-                                             <td>02/12/2014 14:53:45</td>
-
-                                     </tr>
-
-                                     <tr class="active"> 
-                                             <td>Nome1</td>
-                                             <td>01/03/2014 08:22:45</td>
-
-                                     </tr>
-
-                                     <tr> 
-                                             <td>Nome2</td>
-                                             <td>02/03/2014 11:43:45</td>
-                                     </tr>
+                                     
                                      </tbody>  
-                             </table>  
+                             </table>
+                            </div>
 
                 </div>          
             
@@ -231,8 +141,20 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
-		
+	
+        <!-- locastyle -->
 		<script type="text/javascript" src="//assets.locaweb.com.br/locastyle/2.0.6/javascripts/locastyle.js"></script>
 		<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        <!-- Redu Bootstrap -->
+        <script src="js/vendor/rails.js"></script>
+        <script src="docs/assets/js/vendor/google-code-prettify.min.js"></script>
+        <script src="docs/assets/js/vendor/bootstrap-scrollspy.min.js"></script>
+        <script src="js/vendor/jquery.tokeninput.js"></script>
+        <script src="js/vendor/jquery.autosize.min.js"></script>
+        <script src="js/vendor/placeholder-polyfill.min.js"></script>
+        <script src="js/bootstrap-redu.js"></script>
+        <script src="http://use.typekit.com/lpo4rgu.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+    
     </body>
 </html>
