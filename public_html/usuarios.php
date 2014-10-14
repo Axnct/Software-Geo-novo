@@ -88,10 +88,10 @@
                                      <a data-toggle="modal" href="#myModal1" class="btn btn-primary ico-cog">Editar</a>   
                             </div>                       
                             <div class="ls-list-title ico-user">
-                                    <a href="">Claudio</a>                              
+                                    <a href="" style="font-size: medium;">Claudio</a>                              
                             </div>
                     </header>
-                    <div class="ls-list-content ">
+                    <div class="ls-list-content" style="font-size: medium;">
                             <div class="col-xs-6 col-md-6">
                                     <strong class="ls-list-label">Status</strong>
                                     Offline
@@ -102,68 +102,72 @@
                             </div>
                     </div>
             </div>
-            <div class="ls-list" style="background-color: white;">
-                    <header class="ls-list-header">
-                            <div class="ls-group-actions" style="margin-bottom: 5px; margin-right: 5px;">
-                                    <!-- Button trigger modal -->
-                                     <a data-toggle="modal" href="#myModal1" class="btn btn-primary ico-cog">Editar</a>
-                            </div>                      
-                            <div class="ls-list-title ico-user">
-                                    <a href="">Amanda</a>                              
-                            </div>
-                    </header>
-                    <div class="ls-list-content ">
-                            <div class="col-xs-6 col-md-6">
-                                    <strong class="ls-list-label">Status</strong>
-                                    Offline
-                            </div>
-                            <div class="col-xs-6 col-md-6">
-                                    <strong class="ls-list-label">Último acesso</strong>
-                                    03/08/2014 - 13:11
-                            </div>
-                    </div>
-            </div>
-            <div class="ls-list" style="background-color: white;">
-                    <header class="ls-list-header">
-                            <div class="ls-group-actions" style="margin-bottom: 5px; margin-right: 5px;">
-                                    <!-- Button trigger modal -->
-                                     <a data-toggle="modal" href="#myModal1" class="btn btn-primary ico-cog">Editar</a>
-                            </div>                         
-                            <div class="ls-list-title ico-user">
-                                    <a href="">Yan</a>                              
-                            </div>
-                    </header>
-                    <div class="ls-list-content ">
-                            <div class="col-xs-6 col-md-6">
-                                    <strong class="ls-list-label">Status</strong>
-                                    Offline
-                            </div>
-                            <div class="col-xs-6 col-md-6">
-                                    <strong class="ls-list-label">Último acesso</strong>
-                                    03/08/2014 - 13:11
-                            </div>
-                    </div>
-            </div>
-            <div class="ls-list" style="background-color: white;">
-                    <header class="ls-list-header">
-                            <div class="ls-group-actions" style="margin-bottom: 5px; margin-right: 5px;">
-                                    <!-- Button trigger modal -->
-                                     <a data-toggle="modal" href="#myModal1" class="btn btn-primary ico-cog">Editar</a>
-                            </div>                         
-                            <div class="ls-list-title ico-user">
-                                    <a href="">Usuário1234</a>                              
-                            </div>
-                    </header>
-                    <div class="ls-list-content ">
-                            <div class="col-xs-6 col-md-6">
-                                    <strong class="ls-list-label">Status</strong>
-                                    Offline
-                            </div>
-                            <div class="col-xs-6 col-md-6">
-                                    <strong class="ls-list-label">Último acesso</strong>
-                                    03/08/2014 - 13:11
-                            </div>
-                    </div>
+            
+            <!-- Usuarios -->
+            <div>
+                <div class="ls-list" style="background-color: white;">
+                        <header class="ls-list-header">
+                                <div class="ls-group-actions" style="margin-bottom: 5px; margin-right: 5px;">
+                                        <!-- Button trigger modal -->
+                                         <a data-toggle="modal" href="#myModal1" class="btn btn-primary ico-cog">Editar</a>
+                                </div>                      
+                                <div class="ls-list-title ico-user">
+                                        <a href="" style="font-size: medium;">Amanda</a>                              
+                                </div>
+                        </header>
+                    <div class="ls-list-content" style="font-size: medium;">
+                                <div class="col-xs-6 col-md-6">
+                                        <strong class="ls-list-label">Status</strong>
+                                        Offline
+                                </div>
+                                <div class="col-xs-6 col-md-6">
+                                        <strong class="ls-list-label">Último acesso</strong>
+                                        03/08/2014 - 13:11
+                                </div>
+                        </div>
+                </div>
+                <div class="ls-list" style="background-color: white;">
+                        <header class="ls-list-header">
+                                <div class="ls-group-actions" style="margin-bottom: 5px; margin-right: 5px;">
+                                        <!-- Button trigger modal -->
+                                         <a data-toggle="modal" href="#myModal1" class="btn btn-primary ico-cog">Editar</a>
+                                </div>                         
+                                <div class="ls-list-title ico-user">
+                                        <a href="" style="font-size: medium;">Yan</a>                              
+                                </div>
+                        </header>
+                        <div class="ls-list-content" style="font-size: medium;">
+                                <div class="col-xs-6 col-md-6">
+                                        <strong class="ls-list-label">Status</strong>
+                                        Offline
+                                </div>
+                                <div class="col-xs-6 col-md-6">
+                                        <strong class="ls-list-label">Último acesso</strong>
+                                        03/08/2014 - 13:11
+                                </div>
+                        </div>
+                </div>
+                <div class="ls-list" style="background-color: white;">
+                        <header class="ls-list-header">
+                                <div class="ls-group-actions" style="margin-bottom: 5px; margin-right: 5px;">
+                                        <!-- Button trigger modal -->
+                                         <a data-toggle="modal" href="#myModal1" class="btn btn-primary ico-cog">Editar</a>
+                                </div>                         
+                                <div class="ls-list-title ico-user">
+                                        <a href="" style="font-size: medium;">Usuário1</a>                              
+                                </div>
+                        </header>
+                        <div class="ls-list-content " style="font-size: medium;">
+                                <div class="col-xs-6 col-md-6">
+                                        <strong class="ls-list-label">Status</strong>
+                                        Offline
+                                </div>
+                                <div class="col-xs-6 col-md-6">
+                                        <strong class="ls-list-label">Último acesso</strong>
+                                        03/08/2014 - 13:11
+                                </div>
+                        </div>
+                </div>
             </div>
             
 

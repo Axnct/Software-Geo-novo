@@ -89,7 +89,7 @@
         </div>
         
        <div class="container">
-            <div id="relatorios" style="overflow: auto; width: 100%; max-height: 200px;">
+            <div id="relatorios" style="overflow: auto; width: 100%; max-height: 200px; font-size: larger;">
                  <h1 style="color: #777;">RELATÓRIOS</h1>
                           <div>
                               <table class="table-with-borderradius table-with-link" style="padding-left: 20px; padding-right: 20px;">
@@ -102,17 +102,17 @@
                               </thead>
                               <tbody>
                                 <tr class="link-container">
-                                  <td><a href="#" class="link-target">Relatório 1</a></td>
+                                    <td><a href="exemplosrelatorios.php" class="link-target">Relatório 1</a></td>
                                   <td>10/10/2014 - 13:43</td>
                                   <td>Amanda (ADM)</td>
                                 </tr>
                                 <tr class="link-container">
-                                  <td><a href="#" class="link-target">Relatório 2</a></td>
+                                    <td><a href="exemplosrelatorios.php" class="link-target">Relatório 2</a></td>
                                   <td>08/10/2014 - 11:20</td>
                                   <td>Cláudio (ADM)</td>
                                 </tr>
                                 <tr class="link-container">
-                                  <td><a href="#" class="link-target">Relatório 3</a></td>
+                                    <td><a href="exemplosrelatorios.php" class="link-target">Relatório 3</a></td>
                                   <td>05/09/2014 - 13:43</td>
                                   <td>Cláudio (ADM)</td>
                                 </tr>

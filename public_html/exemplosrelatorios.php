@@ -15,6 +15,12 @@
         
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
+        
+        <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="//assets.locaweb.com.br/locastyle/2.0.6/stylesheets/locastyle.css">
+         
+
+       
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
@@ -30,17 +36,75 @@
         </div>
         
         <!-- INICIO CONTEUDO DO SITE -->
-        <div id="relatorios">
-            <table width="90%" align = center border="2px"  bordercolor="#808080"> 
+        <div class="container">
+            
+          <div id="relatorios">        
+                <div style="border: 2px solid grey;"> <!-- parte do mapa -->                     
+                    <img ondrop="drop(event)" ondragover="allowDrop(event)" style="opacity: 1; width: 100%;" src="img/mapa.jpg">
+                </div>
+              
+                 <!-- Drag and Drop -->
+                        <style>
+                        #div1
+                        {float:left; width:35px; height:35px; margin:10px;padding:10px;}
+                        </style>
+                        <script>
+                        function allowDrop(ev) {
+                            ev.preventDefault();
+                        }
+
+                        function drag(ev) {
+                            ev.dataTransfer.setData("text/html", ev.target.id);
+                        }
+
+                        function drop(ev) {
+                            ev.preventDefault();
+                            var data = ev.dataTransfer.getData("text/html");
+                            ev.target.appendChild(document.getElementById(data));
+                        }
+                        </script>                      
+                        
+
+                        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <img src="img/push.png" draggable="true" ondragstart="drag(event)" id="drag1" width="32" height="32" style="opacity: 1; margin-top: 25px; margin-left: 20px;">
+                        </div>
+                        
+                        <div style="margin-top: 20px;">
+                            <div class="form-group" style="width: 380px; margin-left: 90px;">
+                                <label for="exampleInputEmail1" style="font-size: large;">Referências</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Insira o nome da referência">
+                                    <p class="help-block" style="font-size: initial;">Clique e arraste o ícone para o mapa no local desejado.</p>
+                            </div>
+                            
+                        </div>
+                        
+                        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <img src="img/push.png" draggable="true" ondragstart="drag(event)" id="drag1" width="32" height="32" style="opacity: 1; margin-left: 20px;">
+                        </div>
+                        
+                        <div style="margin-top: 20px;">
+                            <div class="form-group" style="width: 380px; margin-left: 90px;">                                
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Insira o nome da referência">
+                                    <p class="help-block" style="font-size: initial;">Clique e arraste o ícone para o mapa no local desejado.</p>
+                            </div>
+                            
+                        </div>
+
+                       
+              
+         </div>            
+            
+            
+            
+        <div id="acessos">
+            <table width="90%" align = center border="2px"  bordercolor="#808080" style="margin-top: 20px;"> 
                <tbody>
-                    <th width=100%>
-                    (ESTE É O CABEÇALHO) <br>
-                    Relatório referindo- se ao caso nº22740219</th>
-                    </tr>
+                    <th width=100%>                    
+                    Relatório
+                    </th>
 
                       <tr> 
-                           <td width="100%">
-                                (Descrição)  </br>
+                           <td width="100%">                                
                                 O perpetrador se encontrava a nordeste do Shopping Aspen Park ,<br>
                                  como indica no mapa da geolocalização .<br />
                                O perpetrador ficou no mesmo local aproximadamente durante 2 horas,
@@ -49,31 +113,23 @@
                                A Seguir temos uma amostra da geolocalização  de onde ele se encontrava. <br/>
                                etc...<br />
                                (...)</td>
-                        </tr> 
-
-                  <tr> 
-                     <td width=100%></td> 
-                  </tr>
-                
-                </tbody>    
-                 
-             </table> 
-            </div>
-        </div>
-
-
-         <div id="acessos">
-        
-                         
-            <div> <!-- parte do mapa -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m22!1m12!1m3!1d3660.3922513674174!2d-51.91447737794699!3d-23.446311515885675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m7!1i0!3e6!4m0!4m3!3m2!1d-23.446776699999997!2d-51.913725899999996!5e0!3m2!1sen!2s!4v1408557579648" width="580" height="480" frameborder="0" style="border: 3px solid grey; margin-top: 12px;"></iframe>
-           
-        </div>
+                      </tr>              
+               </tbody>             
+            </table> 
             
-         
-        </div>      
-			  
+            <div class="btn-group btn-group-justified" style="margin-top: 50px;">
+                <button type="button" class="btn btn-default btn-lg" style="width: 120px;">
+                       <span class="glyphicon glyphicon-print"></span> Imprimir
+                </button>
+                <button type="button" class="btn btn-default btn-lg" style="width: 120px;">
+                       <span class="glyphicon glyphicon-cog"></span> Editar
+                </button>
+                <button type="button" class="btn btn-default btn-lg" style="width: 120px;">
+                       <span class="glyphicon glyphicon-remove"></span> Excluir
+                </button>
+           </div>              
         
+        </div>
         
         
         <!-- SCRIPT JQUERY -->
@@ -81,5 +137,9 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
+         <!--          Locastyle -->
+        <script type="text/javascript" src="//assets.locaweb.com.br/locastyle/2.0.6/javascripts/locastyle.js"></script>
+        <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        <!-- Fim Locastyle -->
     </body>
 </html>
