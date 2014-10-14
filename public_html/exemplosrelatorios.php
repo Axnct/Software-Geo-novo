@@ -39,34 +39,43 @@
         <div class="container">
             
           <div id="relatorios">        
-                <div style="border: 2px solid grey;"> <!-- parte do mapa -->                     
-                    <img ondrop="drop(event)" ondragover="allowDrop(event)" style="opacity: 1; width: 100%;" src="img/mapa.jpg">
+                <div style="border: 2px solid grey;" ondragover="drag_over(event)" ondrop="drop(event)"> <!-- parte do mapa -->                     
+                    <img style="opacity: 1; width: 100%;" src="img/mapa.jpg">
                 </div>
               
-                 <!-- Drag and Drop -->
-                        <style>
-                        #div1
-                        {float:left; width:35px; height:35px; margin:10px;padding:10px;}
-                        </style>
+                 <!-- Drag and Drop -->                        
                         <script>
-                        function allowDrop(ev) {
-                            ev.preventDefault();
+                        function drag_start(event) 
+                        {
+                        var style = window.getComputedStyle(event.target, null);
+                        var str = (parseInt(style.getPropertyValue("left")) - event.clientX) + ',' + (parseInt(style.getPropertyValue("top")) - event.clientY)+ ',' + event.target.id;
+                        event.dataTransfer.setData("Text",str);
+                        } 
+
+                        function drop(event) 
+                        {
+                        var offset = event.dataTransfer.getData("Text").split(',');
+                        var dm = document.getElementById(offset[2]);
+                        dm.style.left = (event.clientX + parseInt(offset[0],10)) + 'px';
+                        dm.style.top = (event.clientY + parseInt(offset[1],10)) + 'px';
+                        event.preventDefault();
+                        return false;
                         }
 
-                        function drag(ev) {
-                            ev.dataTransfer.setData("text/html", ev.target.id);
-                        }
-
-                        function drop(ev) {
-                            ev.preventDefault();
-                            var data = ev.dataTransfer.getData("text/html");
-                            ev.target.appendChild(document.getElementById(data));
+                        function drag_over(event)
+                        {
+                        event.preventDefault();
+                        return false;
                         }
                         </script>                      
                         
 
-                        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-                            <img src="img/push.png" draggable="true" ondragstart="drag(event)" id="drag1" width="32" height="32" style="opacity: 1; margin-top: 25px; margin-left: 20px;">
+                        <div>                          
+                            <ul>
+                                <li id="txt1" draggable="true" ondragstart="drag_start(event)" style="position: absolute; left: 0; top: 0; width: auto; background: rgba(255,255,255,0.66); border-radius: 4px; padding: 8px;">
+                                    <img src="img/push.png" style="opacity: 1;"><b>Referência 1</b>
+                                </li>
+                            </ul>
                         </div>
                         
                         <div style="margin-top: 20px;">
@@ -76,28 +85,14 @@
                                     <p class="help-block" style="font-size: initial;">Clique e arraste o ícone para o mapa no local desejado.</p>
                             </div>
                             
-                        </div>
-                        
-                        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-                            <img src="img/push.png" draggable="true" ondragstart="drag(event)" id="drag1" width="32" height="32" style="opacity: 1; margin-left: 20px;">
-                        </div>
-                        
-                        <div style="margin-top: 20px;">
-                            <div class="form-group" style="width: 380px; margin-left: 90px;">                                
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Insira o nome da referência">
-                                    <p class="help-block" style="font-size: initial;">Clique e arraste o ícone para o mapa no local desejado.</p>
-                            </div>
-                            
-                        </div>
-
-                       
-              
+                        </div>                 
+                    
          </div>            
             
             
             
         <div id="acessos">
-            <table width="90%" align = center border="2px"  bordercolor="#808080" style="margin-top: 20px;"> 
+            <table width="90%" align = center border="2px"  bordercolor="#808080" style="margin-top: 20px; margin-left: 25px;"> 
                <tbody>
                     <th width=100%>                    
                     Relatório
@@ -118,13 +113,13 @@
             </table> 
             
             <div class="btn-group btn-group-justified" style="margin-top: 50px;">
-                <button type="button" class="btn btn-default btn-lg" style="width: 120px;">
+                <button type="button" class="btn btn-default btn-lg" style="width: 135px;">
                        <span class="glyphicon glyphicon-print"></span> Imprimir
                 </button>
-                <button type="button" class="btn btn-default btn-lg" style="width: 120px;">
+                <button type="button" class="btn btn-default btn-lg" style="width: 135px;">
                        <span class="glyphicon glyphicon-cog"></span> Editar
                 </button>
-                <button type="button" class="btn btn-default btn-lg" style="width: 120px;">
+                <button type="button" class="btn btn-default btn-lg" style="width: 135px;">
                        <span class="glyphicon glyphicon-remove"></span> Excluir
                 </button>
            </div>              

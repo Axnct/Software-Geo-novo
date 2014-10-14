@@ -46,28 +46,26 @@
                                                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                                                                     <h4 class="modal-title" id="myModalLabel">Novo Usuário</h4>
                                                             </div>
-                                                            <div class="modal-body">
+                                                        <div class="modal-body">
                                                                 <form role="form">
                                                                     <fieldset>
                                                                             <div class="form-group">
-                                                                                    <label for="exampleInputEmail1" style="float: left;">Nome</label>
+                                                                                    <label for="exampleInputEmail1" style="float: left; font-size: larger;">Nome</label>
                                                                                     <input class="form-control" placeholder="Insira seu nome aqui">
-                                                                                    <p class="help-block">O Nome será usado para efetuar o login.</p>
-                                                                                    <label for="exampleInputEmail1" style="float: left;">Email</label>
+                                                                                    <p class="help-block" style="font-size: medium;">O Nome será usado para efetuar o login.</p>
+                                                                                    <label for="exampleInputEmail1" style="float: left; font-size: larger;">Email</label>
                                                                                     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Insira seu nome aqui">
                                                                             </div>
-<!--                                                                            <div class="form-group">
-                                                                                    <label for="exampleSelect">Tipo de Acesso</label>
-                                                                                    <select id="exampleSelect" class="form-control">
-                                                                                            <option value="">Administrador</option>
-                                                                                            <option value="">Pesquisador</option>
-                                                                                    </select>
-                                                                            </div>-->
                                                                             <div class="form-group">
-                                                                                    <label for="exampleInputPassword1" style="float: left;">Senha</label>
+                                                                                   <label for="exampleInputEmail1" style="float: left; font-size: larger;">Setor / Cargo</label>
+                                                                                    <input class="form-control" placeholder="Insira seu Setor / Cargo aqui"> 
+                                                                            </div>
+                                                                        
+                                                                            <div class="form-group">
+                                                                                    <label for="exampleInputPassword1" style="float: left; font-size: larger;">Senha</label>
                                                                                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
-                                                                                    <label for="exampleInputPassword1" style="float: left; margin-top: 3px;">Confirmar Senha</label>
-                                                                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                                                                                    <label for="exampleInputPassword1" style="float: left; margin-top: 3px; font-size: larger;">Confirmar Senha</label>
+                                                                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirmar Senha">
                                                                             </div>
                                                                     </fieldset>          
                                                                 </form>     
@@ -87,18 +85,26 @@
                                     <!-- Button trigger modal -->
                                      <a data-toggle="modal" href="#myModal1" class="btn btn-primary ico-cog">Editar</a>   
                             </div>                       
-                            <div class="ls-list-title ico-user">
+                        <div class="ls-list-title ico-user" style="font-size: 22px;">
                                     <a href="" style="font-size: medium;">Claudio</a>                              
                             </div>
                     </header>
                     <div class="ls-list-content" style="font-size: medium;">
-                            <div class="col-xs-6 col-md-6">
+                            <div class="col-xs-6 col-md-6" style="width: 25%;">
+                                    <strong class="ls-list-label">Setor / Cargo</strong>
+                                    GAECO
+                            </div>                            
+                            <div class="col-xs-6 col-md-6" style="width: 25%;">
+                                    <strong class="ls-list-label">Último acesso</strong>
+                                    03/08/2014 - 13:11
+                            </div>
+                            <div class="col-xs-6 col-md-6" style="width: 25%;">
                                     <strong class="ls-list-label">Status</strong>
                                     Offline
                             </div>
-                            <div class="col-xs-6 col-md-6">
-                                    <strong class="ls-list-label">Último acesso</strong>
-                                    03/08/2014 - 13:11
+                        <div class="col-xs-6 col-md-6" style="width: 25%;">
+                                    <strong class="ls-list-label">Situação</strong>
+                                    Habilitado
                             </div>
                     </div>
             </div>
@@ -111,20 +117,28 @@
                                         <!-- Button trigger modal -->
                                          <a data-toggle="modal" href="#myModal1" class="btn btn-primary ico-cog">Editar</a>
                                 </div>                      
-                                <div class="ls-list-title ico-user">
+                                <div class="ls-list-title ico-user" style="font-size: 22px;">
                                         <a href="" style="font-size: medium;">Amanda</a>                              
                                 </div>
                         </header>
                     <div class="ls-list-content" style="font-size: medium;">
-                                <div class="col-xs-6 col-md-6">
-                                        <strong class="ls-list-label">Status</strong>
-                                        Offline
-                                </div>
-                                <div class="col-xs-6 col-md-6">
-                                        <strong class="ls-list-label">Último acesso</strong>
-                                        03/08/2014 - 13:11
-                                </div>
-                        </div>
+                            <div class="col-xs-6 col-md-6" style="width: 25%;">
+                                    <strong class="ls-list-label">Setor / Cargo</strong>
+                                    GAECO
+                            </div>                            
+                            <div class="col-xs-6 col-md-6" style="width: 25%;">
+                                    <strong class="ls-list-label">Último acesso</strong>
+                                    03/08/2014 - 13:11
+                            </div>
+                            <div class="col-xs-6 col-md-6" style="width: 25%;">
+                                    <strong class="ls-list-label">Status</strong>
+                                    Offline
+                            </div>
+                        <div class="col-xs-6 col-md-6" style="width: 25%;">
+                                    <strong class="ls-list-label">Situação</strong>
+                                    Habilitado
+                            </div>
+                    </div>
                 </div>
                 <div class="ls-list" style="background-color: white;">
                         <header class="ls-list-header">
@@ -132,20 +146,28 @@
                                         <!-- Button trigger modal -->
                                          <a data-toggle="modal" href="#myModal1" class="btn btn-primary ico-cog">Editar</a>
                                 </div>                         
-                                <div class="ls-list-title ico-user">
+                                <div class="ls-list-title ico-user" style="font-size: 22px;">
                                         <a href="" style="font-size: medium;">Yan</a>                              
                                 </div>
                         </header>
                         <div class="ls-list-content" style="font-size: medium;">
-                                <div class="col-xs-6 col-md-6">
-                                        <strong class="ls-list-label">Status</strong>
-                                        Offline
-                                </div>
-                                <div class="col-xs-6 col-md-6">
-                                        <strong class="ls-list-label">Último acesso</strong>
-                                        03/08/2014 - 13:11
-                                </div>
-                        </div>
+                            <div class="col-xs-6 col-md-6" style="width: 25%;">
+                                    <strong class="ls-list-label">Setor / Cargo</strong>
+                                    GAECO
+                            </div>                            
+                            <div class="col-xs-6 col-md-6" style="width: 25%;">
+                                    <strong class="ls-list-label">Último acesso</strong>
+                                    03/08/2014 - 13:11
+                            </div>
+                            <div class="col-xs-6 col-md-6" style="width: 25%;">
+                                    <strong class="ls-list-label">Status</strong>
+                                    Offline
+                            </div>
+                        <div class="col-xs-6 col-md-6" style="width: 25%;">
+                                    <strong class="ls-list-label">Situação</strong>
+                                    Habilitado
+                            </div>
+                    </div>
                 </div>
                 <div class="ls-list" style="background-color: white;">
                         <header class="ls-list-header">
@@ -153,20 +175,28 @@
                                         <!-- Button trigger modal -->
                                          <a data-toggle="modal" href="#myModal1" class="btn btn-primary ico-cog">Editar</a>
                                 </div>                         
-                                <div class="ls-list-title ico-user">
+                                <div class="ls-list-title ico-user" style="font-size: 22px;">
                                         <a href="" style="font-size: medium;">Usuário1</a>                              
                                 </div>
                         </header>
-                        <div class="ls-list-content " style="font-size: medium;">
-                                <div class="col-xs-6 col-md-6">
-                                        <strong class="ls-list-label">Status</strong>
-                                        Offline
-                                </div>
-                                <div class="col-xs-6 col-md-6">
-                                        <strong class="ls-list-label">Último acesso</strong>
-                                        03/08/2014 - 13:11
-                                </div>
-                        </div>
+                        <div class="ls-list-content" style="font-size: medium;">
+                            <div class="col-xs-6 col-md-6" style="width: 25%;">
+                                    <strong class="ls-list-label">Setor / Cargo</strong>
+                                    GAECO
+                            </div>                            
+                            <div class="col-xs-6 col-md-6" style="width: 25%;">
+                                    <strong class="ls-list-label">Último acesso</strong>
+                                    03/08/2014 - 13:11
+                            </div>
+                            <div class="col-xs-6 col-md-6" style="width: 25%;">
+                                    <strong class="ls-list-label">Status</strong>
+                                    Offline
+                            </div>
+                        <div class="col-xs-6 col-md-6" style="width: 25%;">
+                                    <strong class="ls-list-label">Situação</strong>
+                                    Habilitado
+                            </div>
+                    </div>
                 </div>
             </div>
             
@@ -174,41 +204,40 @@
             <!-- Modal -->
             <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
-                            <div class="modal-content">
+                        <div class="modal-content" style="width: 120%;">
                                     <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                            <h4 class="modal-title" id="myModalLabel">Título do Modal</h4>
+                                            <h4 class="modal-title" id="myModalLabel">Editar Usuário</h4>
                                     </div>
-                                    <div class="modal-body">
+                                    <div class="modal-body" style="margin: -5%;">
                                                           <div class="modal-body">
                                                                 <form role="form">
                                                                     <fieldset>
                                                                             <div class="form-group">
-                                                                                    <label for="exampleInputEmail1">Nome</label>
-                                                                                    <input class="ls-form-text" placeholder="Insira seu nome aqui">
-                                                                                    <p class="help-block">O Nome será usado para efetuar o login.</p>
-                                                                                    <label for="exampleInputEmail1">Email</label>
-                                                                                    <input type="email" class="ls-form-text" id="exampleInputEmail1" placeholder="Insira seu nome aqui">
+                                                                                <label for="exampleInputEmail1" style="font-size: larger;">Nome</label>
+                                                                                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Cláudio">
+                                                                                    <p class="help-block" style="font-size: larger;">O Nome será usado para efetuar o login.</p>
+                                                                                    <label for="exampleInputEmail1" style="font-size: larger;">Email</label>
+                                                                                    <input type="text" id="disabledTextInput" class="form-control" placeholder="claudio@gmail.com">
                                                                             </div>
-<!--                                                                            <div class="form-group">
-                                                                                    <label for="exampleSelect">Tipo de Acesso</label>
-                                                                                    <select id="exampleSelect" class="form-control">
-                                                                                            <option value="">Administrador</option>
-                                                                                            <option value="">Pesquisador</option>
-                                                                                    </select>
-                                                                            </div>-->
                                                                             <div class="form-group">
-                                                                                    <label for="exampleInputPassword1">Senha</label>
-                                                                                    <input type="password" class="ls-form-text" id="exampleInputPassword1" placeholder="Senha">
-                                                                                    <label for="exampleInputPassword1">Confirmar Senha</label>
-                                                                                    <input type="password" class="ls-form-text'" id="exampleInputPassword1" placeholder="Senha">
+                                                                                   <label for="exampleInputEmail1" style="float: left; font-size: larger;">Setor / Cargo</label>
+                                                                                    <input class="form-control" placeholder="GAECO"> 
+                                                                            </div>
+                                                                        
+                                                                            <div class="form-group">
+                                                                                    
+                                                                                    <label for="exampleInputPassword1" style="float: left; font-size: larger;">Nova Senha</label>
+                                                                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                                                                                    <label for="exampleInputPassword1" style="float: left; margin-top: 3px; font-size: larger;">Confirmar Senha</label>
+                                                                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirmar Senha">
                                                                             </div>
                                                                     </fieldset>          
                                                                 </form>     
                                                             </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-danger" data-dismiss="modal"><span class="glyphicon-icon glyphicon-remove">Desabilitar Usuário</span></button>
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-ban-circle" style="margin-right: 5px;"></span>Desabilitar Usuário</button>
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
                                             <button type="button" class="btn btn-success">Salvar</button>
                                     </div>
