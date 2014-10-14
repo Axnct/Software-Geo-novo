@@ -83,7 +83,7 @@
                 <tbody>
                   <tr>
                     <td>1</td>
-                    <td>Yan (ADM)</td>
+                    <td>Cláudio (ADM)</td>
                     <td>10/10/2014 - 15:33</td>                    
                     <td>Offline</td>                    
                   </tr>
