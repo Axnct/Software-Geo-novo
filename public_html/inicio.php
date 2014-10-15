@@ -20,7 +20,11 @@
         <!-- fim locastyle -->
         
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script> 
-        
+        <style>
+            td{
+                text-align: center;
+            }
+        </style>
   
     </head>
     <body>
@@ -41,7 +45,7 @@
             <h2>Últimos Relatórios</h2>
             <table class="table table-hover">
                 <thead>
-                  <tr>
+                  <tr class="active">
                     <th style="text-align: center;">#</th>
                     <th style="text-align: center;">Relatório</th>
                     <th style="text-align: center;">Data de criação</th>                    

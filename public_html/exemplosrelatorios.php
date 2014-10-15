@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>Relatório</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -72,16 +72,16 @@
 
                         <div>                          
                             <ul>
-                                <li id="txt1" draggable="true" ondragstart="drag_start(event)" style="position: absolute; left: 0; top: 0; width: auto; background: rgba(255,255,255,0.66); border-radius: 4px; padding: 8px;">
+                                <li id="txt1" draggable="true" ondragstart="drag_start(event)" style="position: absolute; left: 35%; top: 35%; width: auto; background: rgba(255,255,255,0.66); border-radius: 4px; padding: 8px;">
                                     <img src="img/push.png" style="opacity: 1;"><b>Referência 1</b>
                                 </li>
                             </ul>
                         </div>
                         
                         <div style="margin-top: 20px;">
-                            <div class="form-group" style="width: 380px; margin-left: 90px;">
-                                <label for="exampleInputEmail1" style="font-size: large;">Referências</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Insira o nome da referência">
+                            <div class="form-group" style="width: 380px; margin-left: 90px;">                                
+                                <label for="exampleInputEmail1" style="font-size: large;">Referências</label>                                    
+                                    <div><img src="img/push.png" style="opacity: 1; float: left;margin-left: -40px;"></div><input type="email" class="form-control" id="exampleInputEmail1" placeholder="Insira o nome da referência">
                                     <p class="help-block" style="font-size: initial;">Clique e arraste o ícone para o mapa no local desejado.</p>
                             </div>
                             
