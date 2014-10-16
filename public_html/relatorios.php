@@ -90,14 +90,14 @@
         
        <div class="container">
             <div id="relatorios" style="overflow: auto; width: 100%; max-height: 200px; font-size: larger;">
-                 <h1 style="color: #777;">RELATÓRIOS</h1>
+                 <h1 style="color: #414141;">RELATÓRIOS</h1>
                           <div>
                               <table class="table-with-borderradius table-with-link" style="padding-left: 20px; padding-right: 20px;">
                               <thead>
                                 <tr>
-                                  <th>Título</th>
-                                  <th>Data/Hora</th>
-                                  <th>Criado por</th>
+                                  <th style="color: #414141;">Título</th>
+                                  <th style="color: #414141;">Data/Hora</th>
+                                  <th style="color: #414141;">Criado por</th>
                                 </tr>
                               </thead>
                               <tbody>
