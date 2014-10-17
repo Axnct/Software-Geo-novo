@@ -49,19 +49,19 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>1</td>
-                    <td>Relatório 1</td>
-                    <td>10/10/2014</td>                    
+                    <td style="text-align: center;">1</td>
+                    <td style="text-align: center;">Relatório 1</td>
+                    <td style="text-align: center;">10/10/2014</td>                    
                   </tr>
                   <tr>
-                    <td>2</td>
-                    <td>Relatório 2</td>
-                    <td>10/10/2014</td>                   
+                    <td style="text-align: center;" >2</td>
+                    <td style="text-align: center;" >Relatório 2</td>
+                    <td style="text-align: center;">10/10/2014</td>                   
                   </tr>                 
-                  <tr>
-                    <td>3</td>
-                    <td>Relatório 1</td>
-                    <td>10/10/2014</td>                   
+                  <tr >
+                    <td style="text-align: center;">3</td>
+                    <td style="text-align: center;">Relatório 1</td>
+                    <td style="text-align: center;">10/10/2014</td>                   
                   </tr>                 
                 </tbody>
               </table>
@@ -80,24 +80,24 @@
                     <th style="text-align: center;">Status</th>                    
                   </tr>
                 </thead>
-                <tbody>
+                <tbody style="text-align: center;">
                   <tr>
-                    <td>1</td>
-                    <td>Cláudio (ADM)</td>
-                    <td>10/10/2014 - 15:33</td>                    
-                    <td>Offline</td>                    
+                    <td style="text-align: center;">1</td>
+                    <td style="text-align: center;">Cláudio (ADM)</td>
+                    <td style="text-align: center;">10/10/2014 - 15:33</td>                    
+                    <td style="text-align: center;">Offline</td>                    
                   </tr>
                   <tr>
-                    <td>2</td>
-                    <td>Yan (ADM)</td>
-                    <td>10/10/2014 - 16:53</td>                    
-                    <td>Offline</td>                    
+                    <td style="text-align: center;">2</td>
+                    <td style="text-align: center;">Yan (ADM)</td>
+                    <td style="text-align: center;">10/10/2014 - 16:53</td>                    
+                    <td style="text-align: center;">Offline</td>                    
                   </tr>                 
                   <tr>
-                    <td>3</td>
-                    <td>Yan (ADM)</td>
-                    <td>11/10/2014 - 00:25</td>                    
-                    <td>Offline</td>                    
+                    <td style="text-align: center;">3</td>
+                    <td style="text-align: center;">Yan (ADM)</td>
+                    <td style="text-align: center;">11/10/2014 - 00:25</td>                    
+                    <td style="text-align: center;">Offline</td>                    
                   </tr>                  
               </table>
         </div>      

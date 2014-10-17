@@ -95,7 +95,7 @@
                               <table class="table-with-borderradius table-with-link" style="padding-left: 20px; padding-right: 20px;">
                               <thead>
                                 <tr>
-                                  <th style="color: #414141;">Título</th>
+                                  <th style="color: #414141; align="center" " >Título </th>
                                   <th style="color: #414141;">Data/Hora</th>
                                   <th style="color: #414141;">Criado por</th>
                                 </tr>

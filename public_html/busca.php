@@ -127,7 +127,7 @@
                                         </div>
                                         <div class="modal-footer">
                                                 <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                                                <button type="button" class="btn btn-primary">Buscar</button>
+                                                <button type="button" class="btn btn-primary">              Buscar    </button>
                                         </div>
                                 </div><!-- /.modal-content -->
                         </div><!-- /.modal-dialog -->
@@ -135,7 +135,7 @@
 
                     
 
-             <button type="button" class="btn btn-success btn-lg">Buscar</button>
+             <button type="button" class="btn btn-success btn-lg">    Buscar    </button>
 
              <a data-toggle="modal" href="#myModal" class="btn btn-primary">Salvar Busca</a>
 
