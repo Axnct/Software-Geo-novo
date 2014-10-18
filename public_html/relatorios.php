@@ -95,26 +95,26 @@
                               <table class="table-with-borderradius table-with-link" style="padding-left: 20px; padding-right: 20px;">
                               <thead>
                                 <tr>
-                                  <th style="color: #414141; align="center" " >Título </th>
-                                  <th style="color: #414141;">Data/Hora</th>
-                                  <th style="color: #414141;">Criado por</th>
+                                  <th style="text-align: center; color:#414141 ">Título </th>
+                                  <th style="text-align: center; color:#414141 ">Data/Hora</th>
+                                  <th style="text-align: center; color:#414141 ">Criado por</th>
                                 </tr>
                               </thead>
                               <tbody>
                                 <tr class="link-container">
-                                    <td><a href="exemplosrelatorios.php" class="link-target">Relatório 1</a></td>
-                                  <td>10/10/2014 - 13:43</td>
-                                  <td>Amanda (ADM)</td>
+                                  <td style="text-align: center;"><a href="exemplosrelatorios.php" class="link-target color= #000000;">Relatório 1</a></td>
+                                  <td style="text-align: center;" >10/10/2014 - 13:43</td>
+                                  <td style="text-align: center;">Amanda (ADM)</td>
                                 </tr>
                                 <tr class="link-container">
-                                    <td><a href="exemplosrelatorios.php" class="link-target">Relatório 2</a></td>
-                                  <td>08/10/2014 - 11:20</td>
-                                  <td>Cláudio (ADM)</td>
+                                  <td style="text-align: center;"><a href="exemplosrelatorios.php" class="link-target">Relatório 2</a></td>
+                                  <td style="text-align: center;">08/10/2014 - 11:20</td>
+                                  <td style="text-align: center;">Cláudio (ADM)</td>
                                 </tr>
                                 <tr class="link-container">
-                                    <td><a href="exemplosrelatorios.php" class="link-target">Relatório 3</a></td>
-                                  <td>05/09/2014 - 13:43</td>
-                                  <td>Cláudio (ADM)</td>
+                                  <td style="text-align: center;"><a href="exemplosrelatorios.php" class="link-target">Relatório 3</a></td>
+                                  <td style="text-align: center;">05/09/2014 - 13:43</td>
+                                  <td style="text-align: center;">Cláudio (ADM)</td>
                                 </tr>
                               </tbody>
                             </table>
