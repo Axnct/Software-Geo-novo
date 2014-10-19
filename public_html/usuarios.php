@@ -237,9 +237,17 @@
                                                             </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-ban-circle" style="margin-right: 5px;"></span>Desabilitar Usuário</button>
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                                            <button type="button" class="btn btn-success">Salvar</button>
+                                        <div class="btn-group btn-group-justified">
+                                            <button type="button" class="btn btn-default" style="width: 170px; float: left;" data-dismiss="modal">
+                                                   <span class="glyphicon glyphicon-ban-circle"></span> Desabilitar Usuário
+                                            </button>
+                                            <button type="button" class="btn btn-default" style="width: 100px; float: left;" data-dismiss="modal">
+                                                   <span class="glyphicon glyphicon-remove"></span> Fechar
+                                            </button>
+                                            <button type="button" class="btn btn-success" style="width: 145px; float: left;" data-dismiss="modal">
+                                                   <span class="glyphicon glyphicon-floppy-save"></span> Salvar
+                                            </button>
+                                       </div>                                        
                                     </div>
                             </div><!-- /.modal-content -->
                     </div><!-- /.modal-dialog -->

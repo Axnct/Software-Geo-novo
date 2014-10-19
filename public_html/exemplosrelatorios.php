@@ -38,9 +38,17 @@
         <!-- INICIO CONTEUDO DO SITE -->
         <div class="container">
             
-          <div id="relatorios">        
+            <div id="relatorios" style="width: 100%;">
+                  <div class="row">
+                      <div class="col-xs-12 col-md-4"><img src="img/gaeco.jpg" style="width: 200px; margin-top: 20px;"></div>
+                      <div class="col-xs-6 col-md-8" style="text-align: start;"><h3 style="margin-top: 70px;">Grupo de Atuação Especial De Combate ao Crime Organizado</h3></div>
+                  </div>
+                
+                <div>
+                    <h1 style="text-align: center;">Relatório 1</h1>
+                </div>
                 <div style="border: 2px solid grey;" ondragover="drag_over(event)" ondrop="drop(event)"> <!-- parte do mapa -->                     
-                    <img style="opacity: 1; width: 100%;" src="img/mapa.jpg">
+                    <img style="opacity: 1; width: 100%;" src="img/mapa2.jpg">
                 </div>
               
                  <!-- Drag and Drop -->                        
@@ -72,7 +80,7 @@
 
                         <div>                          
                             <ul>
-                                <li id="txt1" draggable="true" ondragstart="drag_start(event)" style="position: absolute; left: 35%; top: 35%; width: auto; background: rgba(255,255,255,0.66); border-radius: 4px; padding: 8px;">
+                                <li id="txt1" draggable="true" ondragstart="drag_start(event)" style="position: absolute; left: 64%; top: 95%; width: auto; background: rgba(255,255,255,0.66); border-radius: 4px; padding: 8px;">
                                     <img src="img/push.png" style="opacity: 1;"><b>Referência 1</b>
                                 </li>
                             </ul>
@@ -85,46 +93,47 @@
                                     <p class="help-block" style="font-size: initial;">Clique e arraste o ícone para o mapa no local desejado.</p>
                             </div>
                             
-                        </div>                 
+                        </div> 
+                        
+                        
+                        <table width="90%" align = center border="2px"  bordercolor="#808080" style="margin-top: 20px; margin-left: 50px;"> 
+                        <tbody>
+                             <th width=100%>                    
+                             Relatório
+                             </th>
+
+                               <tr> 
+                                    <td width="100%">                                
+                                         O perpetrador se encontrava a nordeste do Shopping Aspen Park ,
+                                          como indica no mapa da geolocalização .<br />
+                                        O perpetrador ficou no mesmo local aproximadamente durante 2 horas,
+                                         provavelmente a espera de sua  vítima.
+                                         Que trabalha nas localizações próximas de onde ele se encontrava. <br/>
+                                        A Seguir temos uma amostra da geolocalização  de onde ele se encontrava.
+                                        etc...
+                                        (...)</td>
+                               </tr>              
+                        </tbody>             
+                     </table> 
+
+                     <div class="btn-group btn-group-justified" style="margin-top: 50px; margin-bottom: 10px;">
+                         <button type="button" class="btn btn-default btn-lg" style="width: 140px;">
+                                <span class="glyphicon glyphicon-floppy-save"></span> Download
+                         </button>
+                         <button type="button" class="btn btn-default btn-lg" style="width: 140px;">
+                                <span class="glyphicon glyphicon-cog"></span> Editar
+                         </button>
+                         <button type="button" class="btn btn-default btn-lg" style="width: 140px;">
+                                <span class="glyphicon glyphicon-remove"></span> Excluir
+                         </button>
+                    </div> 
+                        
                     
          </div>            
             
             
             
-        <div id="acessos">
-            <table width="90%" align = center border="2px"  bordercolor="#808080" style="margin-top: 20px; margin-left: 25px;"> 
-               <tbody>
-                    <th width=100%>                    
-                    Relatório
-                    </th>
-
-                      <tr> 
-                           <td width="100%">                                
-                                O perpetrador se encontrava a nordeste do Shopping Aspen Park ,<br>
-                                 como indica no mapa da geolocalização .<br />
-                               O perpetrador ficou no mesmo local aproximadamente durante 2 horas,
-                                provavelmente a espera de sua  vítima.<br />
-                                Que trabalha nas localizações próximas de onde ele se encontrava. <br/>
-                               A Seguir temos uma amostra da geolocalização  de onde ele se encontrava. <br/>
-                               etc...<br />
-                               (...)</td>
-                      </tr>              
-               </tbody>             
-            </table> 
-            
-            <div class="btn-group btn-group-justified" style="margin-top: 50px;">
-                <button type="button" class="btn btn-default btn-lg" style="width: 135px;">
-                       <span class="glyphicon glyphicon-print"></span> Imprimir
-                </button>
-                <button type="button" class="btn btn-default btn-lg" style="width: 135px;">
-                       <span class="glyphicon glyphicon-cog"></span> Editar
-                </button>
-                <button type="button" class="btn btn-default btn-lg" style="width: 135px;">
-                       <span class="glyphicon glyphicon-remove"></span> Excluir
-                </button>
-           </div>              
-        
-        </div>
+       
         
         
         <!-- SCRIPT JQUERY -->
