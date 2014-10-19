@@ -8,9 +8,6 @@ body {
     -ms-background-size: cover; /*Css IE não use essa mer#^@%#*/
     -o-background-size: cover; /*Css Opera*/
      }
-img{
-    opacity: 0.3;
-}
 
 th,
 td {  

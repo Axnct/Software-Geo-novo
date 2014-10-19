@@ -24,31 +24,19 @@
          <!-- add button -->
         <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
        
+        <link rel="stylesheet" type="text/css" href="css/demo.css"/>
 
-        <script>
+	<!-- Dependencies: JQuery and GMaps API should be loaded first -->
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
-           $(document).ready(function() {
-             var max_fields      = 10; //maximum input boxes allowed
-             var wrapper         = $(".input_fields_wrap"); //Fields wrapper
-             var add_button      = $(".add_field_button"); //Add button ID
-
-             var x = 1; //initlal text box count
-             $(add_button).click(function(e){ //on add input button click
-                 e.preventDefault();
-                 if(x < max_fields){ //max input box allowed
-                     x++; //text box increment
-                     $(wrapper).append('<tr><td><input name="id" value="2" type="checkbox"></td><td> <div><input class="form-control input-lg" type="text" placeholder="-23.4467767" style="border: 1px solid grey;"></div></td><td> <div><input class="form-control input-lg" type="text" placeholder="-51.9137259" name="mytext[]" style="border: 1px solid grey;"></div></td><td> <div><input class="form-control input-lg" type="text" placeholder="120º" name="mytext[]" style="border: 1px solid grey;"></div></td><td><select name="select-simples" class="ls-select"><option value="1km">1km</option><option value="2km">2km</option><option value="3km">3km</option><option value="5km">5km</option></select></td></tr>'); //add input box
-                 }
-             });
-
-             $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
-                 e.preventDefault(); $(this).parent('div').remove(); x--;
-             })
-         });
-
-        </script>        
-
-<!-- Fim button -->
+	<!-- CSS and JS for our code -->
+	<link rel="stylesheet" type="text/css" href="css/jquery-gmaps-latlon-picker.css"/>
+	<script src="js/jquery-gmaps-latlon-picker.js"></script>        
+        
+       
+        
+        
 
   </head>
     <body>
@@ -63,117 +51,27 @@
         </div>
         
         <!-- INICIO CONTEUDO DO SITE -->
-        <div class="container">
-            
-            
-            <div id="buscar">
-                
-                <!-- Button trigger modal -->
-                <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Inserir Dados</a>
-
-                <!-- Modal -->
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                                <div class="modal-content">
-                                        <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                                <h4 class="modal-title" id="myModalLabel">Realizar Busca</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                                <div class="add_field_button">
-                                    <button type="button" class="btn btn-primary" style="float: right; margin: 5px; background: cadetblue;">Acrescentar</button>        
-                                    </div>
-                                       <form action="/servidor/salvar" method="post" disabled="" class="ls-form-text">
-                                            <input type="hidden" name="token" value="ehOCabraMesmo">
-                                            <div class="well well-sm clearfix ls-table-group-actions">
-                                                    <p class="d-inline-block">
-                                                            <strong class="counterChecks">0</strong>
-                                                            <span class="counterChecksStr">item selecionado</span>
-                                                    </p>
-                                                    <div class="actions pull-right">                                       
-                                                            <button type="button" class="btn btn-default">
-                                                                    <a href="#" class="remove_field">Excluir</a>
-                                                            </button>
-                                                    </div>
-                                            </div>
-                                            <table class="table ls-table">
-                                                    <thead>
-                                                            <tr>
-                                                                    <th class="txt-center"><input type="checkbox"></th>
-                                                                    <th class="ls-nowrap col-xs-3">Longitude</th>
-                                                                    <th class="hidden-xs">Latitude</th>
-                                                                    <th class="hidden-xs">Azimute</th>
-                                                                    <th class="hidden-xs">Raio</th>
-                                                            </tr>
-                                                    </thead>
-                                                    <tbody class="input_fields_wrap">                                
-                                                            <tr>
-                                                                    <td><input name="id" value="1" type="checkbox"></td>
-                                                                    <td> <div><input class="form-control input-lg" type="text" placeholder="-23.4467767" name="mytext[]" style="border: 1px solid grey;"></div></td>
-                                                                    <td> <div><input class="form-control input-lg" type="text" placeholder="-51.9137259" name="mytext[]" style="border: 1px solid grey;"></div></td>
-                                                                    <td> <div><input class="form-control input-lg" type="text" placeholder="120º" style="border: 1px solid grey;"></div></td>                                                                                              
-                                                                    <td>
-                                                                        <select name="select-simples" class="ls-select">
-                                                                                <option value="1km">1km</option>
-                                                                                <option value="2km">2km</option>
-                                                                                <option value="3km">3km</option>
-                                                                                <option value="5km">5km</option>
-                                                                        </select>                                                 
-                                                                   </td>
-                                                            </tr>                                                                            
-                                                    </tbody>
-                                            </table>
-                                    </form>
-                                        </div>
-                                        <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                                                <button type="button" class="btn btn-primary">Buscar</button>
-                                        </div>
-                                </div><!-- /.modal-content -->
-                        </div><!-- /.modal-dialog -->
-                </div><!-- /.modal -->
-
-                    
-
-             <button type="button" class="btn btn-success btn-lg">Buscar</button>
-
-             <a data-toggle="modal" href="#myModal" class="btn btn-primary">Salvar Busca</a>
-
-                <!-- Modal -->
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                                <div class="modal-content">
-                                        <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                                <h4 class="modal-title" id="myModalLabel">Salvar relatório</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                                <form role="form">
-                                                    <fieldset>
-                                                            <div class="form-group">
-                                                                    <label>Nome do relatório</label>
-                                                                    <input class="form-control" placeholder="Insira o nome do relatório">
-                                                                    <label>Descrição</label>
-                                                                    <textarea class="form-control" rows="3"></textarea>                                                                 
-                                                            </div>
-                                                    </fieldset>
-                                                </form>
-                                        </div>
-                                        <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                                                <button type="button" class="btn btn-success">Salvar</button>
-                                        </div>
-                                </div><!-- /.modal-content -->
-                        </div><!-- /.modal-dialog -->
-                </div><!-- /.modal -->  
-
-            </div>
+        <div class="container">          
+          
             
             <div id="mapa" style="width: 100%; min-height: 300px; height: 450px;">           
-                <div style="border: 2px solid grey;"> <!-- parte do mapa -->
-                    <img style="opacity: 1; width: 100%;" src="img/mapa.jpg">
+                <div style="border: 2px solid grey; height: 129%;"> <!-- parte do mapa -->
+                  <form>
+                        <fieldset class="gllpLatlonPicker">
+                                    <div class="gllpMap"></div>                               
+                                    <div style="height: 125px; background-color: #EDEDED;">
+                                        <h4 style="float: left; margin-top: 30px; margin-left: 50px;">Latitude:</h4> <input type="text" class="gllpLatitude form-control" value="-23.4245878" style="width: 20%;float: left;margin-left: 15px;margin-top: 22px;"/><br/>
+                                        <h4 style="float: left; margin-left: 20px;">Longitude:</h4> <input type="text" class="gllpLongitude form-control" value="-51.9385272" style="float: inside; margin-left: 480px; width: 225px;"/><br/>
+                                        <h4 style="float: left; margin-left: 50px;">Zoom:</h4> <input type="text" class="gllpZoom form-control" value="15" style="float: left; margin-left: 32px; width: 225px;"/>
+                                        <input type="button" class="gllpUpdateButton btn btn-default" value="Atualizar Mapa" size="200px" style="float: right; margin-right: 194px; margin-top: -53px;">                                    
+                                        <h4 style="float: left; margin-left: 23px;">Nome da Posição:</h4> <input type="text" class="gllpLocationName form-control" size=80 style="float: left; margin-left: 15px; width: 400px;"/><br/>                                    
+                                    </div>
+                        </fieldset>
+                                
+                    </form>
                 </div>
-            </div>
+            </div>            
+            
         </div>
         
         

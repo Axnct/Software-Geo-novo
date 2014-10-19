@@ -56,8 +56,8 @@
                       <li class="dropdown">
                           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user" style="margin-right: 10px; margin-top: 3px;"></span> Yan (ADM)</a>
                         <ul class="dropdown-menu" role="menu">                          
-                          <li><a href="#">Conta</a></li>
-                          <li class="divider"></li>
+<!--                          <li><a href="#">Conta</a></li>-->
+<!--                          <li class="divider"></li>-->
                           <li><a href="index.php">Sair</a></li>
                         </ul>
                       </li>
