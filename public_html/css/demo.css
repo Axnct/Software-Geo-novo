@@ -5,7 +5,7 @@ caption, th, td {text-align: left; font-weight: normal; }
 blockquote:before, blockquote:after, q:before, q:after { content: ""; }
 blockquote, q { quotes: "" ""; }
 
-BODY    { margin: 20px; padding: 20px; color: #000; font-family: Helvetica, Arial, Verdana, sans-serif; font-size: 14.0px; }
+BODY    { margin: 20px; color: #000; font-family: Helvetica, Arial, Verdana, sans-serif; font-size: 14.0px; }
 IMG 	{ opacity: 1;}
 H1		{ margin: 20px 0; font-size: 3em; }
 H2		{ margin: 40px 0 20px 0; font-size: 1.8em; }

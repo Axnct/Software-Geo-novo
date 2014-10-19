@@ -89,7 +89,7 @@
                                     <a href="" style="font-size: medium;">Claudio</a>                              
                             </div>
                     </header>
-                    <div class="ls-list-content" style="font-size: medium;">
+                    <div class="ls-list-content" style="font-size: medium; text-align:center;">
                             <div class="col-xs-6 col-md-6" style="width: 25%;">
                                     <strong class="ls-list-label">Setor / Cargo</strong>
                                     GAECO
@@ -121,7 +121,7 @@
                                         <a href="" style="font-size: medium;">Amanda</a>                              
                                 </div>
                         </header>
-                    <div class="ls-list-content" style="font-size: medium;">
+                    <div class="ls-list-content" style="font-size: medium;  text-align:center;">
                             <div class="col-xs-6 col-md-6" style="width: 25%;">
                                     <strong class="ls-list-label">Setor / Cargo</strong>
                                     GAECO
@@ -150,7 +150,7 @@
                                         <a href="" style="font-size: medium;">Yan</a>                              
                                 </div>
                         </header>
-                        <div class="ls-list-content" style="font-size: medium;">
+                        <div class="ls-list-content" style="font-size: medium; text-align:center; ">
                             <div class="col-xs-6 col-md-6" style="width: 25%;">
                                     <strong class="ls-list-label">Setor / Cargo</strong>
                                     GAECO
@@ -179,7 +179,7 @@
                                         <a href="" style="font-size: medium;">Usuário1</a>                              
                                 </div>
                         </header>
-                        <div class="ls-list-content" style="font-size: medium;">
+                        <div class="ls-list-content" style="font-size: medium;text-align:center;">
                             <div class="col-xs-6 col-md-6" style="width: 25%;">
                                     <strong class="ls-list-label">Setor / Cargo</strong>
                                     GAECO
