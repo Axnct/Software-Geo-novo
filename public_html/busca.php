@@ -62,9 +62,11 @@
                                     <div style="height: 125px; background-color: #EDEDED;">
                                         <h4 style="float: left; margin-top: 30px; margin-left: 50px;">Latitude:</h4> <input type="text" class="gllpLatitude form-control" value="-23.4245878" style="width: 20%;float: left;margin-left: 15px;margin-top: 22px;"/><br/>
                                         <h4 style="float: left; margin-left: 20px;">Longitude:</h4> <input type="text" class="gllpLongitude form-control" value="-51.9385272" style="float: inside; margin-left: 480px; width: 225px;"/><br/>
-                                        <h4 style="float: left; margin-left: 50px;">Zoom:</h4> <input type="text" class="gllpZoom form-control" value="15" style="float: left; margin-left: 32px; width: 225px;"/>
-                                        <input type="button" class="gllpUpdateButton btn btn-default" value="Atualizar Mapa" size="200px" style="float: right; margin-right: 194px; margin-top: -53px;">                                    
-                                        <h4 style="float: left; margin-left: 23px;">Nome da Posição:</h4> <input type="text" class="gllpLocationName form-control" size=80 style="float: left; margin-left: 15px; width: 400px;"/><br/>                                    
+                                        <h4 style=" margin-right: 8%;margin-top: -4%;">Azimute:</h4> <input type="text" class="form-control" value="45º" style="float: right;  width: 55px;margin-right: 25%;margin-top: -3.3%;"/><br/>
+                                        <h4 style="float: right; margin-right: 20%;margin-top: -4.3%;">Raio:</h4> <input type="text" class="form-control" value="120º" style="float: right;  width: 60px;margin-right: 13%;margin-top: -5%;"/><br/>
+                                        <h4 style="float: left; margin-left: 50px; margin-top: -1.5%;">Zoom:</h4> <input type="text" class="gllpZoom form-control" value="15" style="float: left; margin-left: 32px; width: 225px; margin-top: -2%;"/>
+                                        <input type="button" class="gllpUpdateButton btn btn-default" value="Atualizar Mapa" size="200px" style="float: right; margin-right: 3%; margin-top: -24px;">                                    
+                                        <h4 style="float: left; margin-left: 23px; margin-top: -1.5%;">Nome da Posição:</h4> <input type="text" class="gllpLocationName form-control" size=80 style="float: left; margin-left: 15px; width: 400px; margin-top: -2%;"/><br/>                                    
                                     </div>
                         </fieldset>
                                 

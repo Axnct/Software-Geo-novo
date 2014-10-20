@@ -84,13 +84,13 @@
                   <tr>
                     <td style="text-align: center;">1</td>
                     <td style="text-align: center;">Cláudio (ADM)</td>
-                    <td style="text-align: center;">10/10/2014 - 15:33</td>                    
+                    <td style="text-align: center;">20/10/2014 - 13:33</td>                    
                     <td style="text-align: center;">Offline</td>                    
                   </tr>
                   <tr>
                     <td style="text-align: center;">2</td>
                     <td style="text-align: center;">Yan (ADM)</td>
-                    <td style="text-align: center;">10/10/2014 - 16:53</td>                    
+                    <td style="text-align: center;">20/10/2014 - 12:22</td>                    
                     <td style="text-align: center;">Offline</td>                    
                   </tr>                 
                   <tr>
@@ -98,7 +98,31 @@
                     <td style="text-align: center;">Yan (ADM)</td>
                     <td style="text-align: center;">11/10/2014 - 00:25</td>                    
                     <td style="text-align: center;">Offline</td>                    
-                  </tr>                  
+                  </tr>
+                  <tr>
+                    <td style="text-align: center;">4</td>
+                    <td style="text-align: center;">Cláudio (ADM)</td>
+                    <td style="text-align: center;">10/10/2014 - 15:59</td>                    
+                    <td style="text-align: center;">Offline</td>                    
+                  </tr>
+                  <tr>
+                    <td style="text-align: center;">5</td>
+                    <td style="text-align: center;">Yan (ADM)</td>
+                    <td style="text-align: center;">08/10/2014 - 05:13</td>                    
+                    <td style="text-align: center;">Offline</td>                    
+                  </tr>
+                  <tr>
+                    <td style="text-align: center;">6</td>
+                    <td style="text-align: center;">Yan (ADM)</td>
+                    <td style="text-align: center;">05/10/2014 - 10:24</td>                    
+                    <td style="text-align: center;">Offline</td>                    
+                  </tr>
+                  <tr>
+                    <td style="text-align: center;">7</td>
+                    <td style="text-align: center;">Cláudio (ADM)</td>
+                    <td style="text-align: center;">05/10/2014 - 15:33</td>                    
+                    <td style="text-align: center;">Offline</td>                    
+                  </tr>
               </table>
         </div>      
         </div>

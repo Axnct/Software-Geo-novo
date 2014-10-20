@@ -41,16 +41,16 @@
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-globe" style="margin-right: 10px; margin-top: 3px;"></span>Sistema de Geolocalização de Celulares</a>
+                      <a class="navbar-brand" href="#" style="font-weight: bold;"><span class="glyphicon glyphicon-globe" style="margin-right: 10px;"></span>Sistema de Geolocalização de Celulares</a>
                   </div>
 
                   <!-- Collect the nav links, forms, and other content for toggling -->
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                       <ul class="nav navbar-nav" style="margin-left: 100px;">
-                        <li><a href="inicio.php" target="_top">INÍCIO</a></li>
-                        <li><a href="busca.php" target="_top">BUSCA</a></li>
-                        <li><a href="relatorios.php" target="_top">RELATÓRIOS</a></li>
-                        <li><a href="usuarios.php" target="_top">USUÁRIOS</a></li>                      
+                        <li><a href="inicio.php" target="_top" style="font-weight: bold;">INÍCIO</a></li>
+                        <li><a href="busca.php" target="_top" style="font-weight: bold;">BUSCA</a></li>
+                        <li><a href="relatorios.php" target="_top" style="font-weight: bold;">RELATÓRIOS</a></li>
+                        <li><a href="usuarios.php" target="_top" style="font-weight: bold;">USUÁRIOS</a></li>                      
                     </ul>                    
                     <ul class="nav navbar-nav navbar-right">                      
                       <li class="dropdown">

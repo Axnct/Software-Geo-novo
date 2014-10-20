@@ -92,7 +92,7 @@
             <div id="relatorios" style="overflow: auto; width: 100%; max-height: 200px; font-size: larger;">
                  <h1 style="color: #414141;">RELATÓRIOS</h1>
                           <div>
-                              <table class="table-with-borderradius table-with-link" style="padding-left: 20px; padding-right: 20px;">
+                              <table class="table-with-borderradius table-with-link" style="border: 1px solid rgb(214, 214, 214);border-top-left-radius: 7px;border-top-right-radius: 7px;border-bottom-left-radius: 7px;border-bottom-right-radius: 7px;">
                               <thead>
                                 <tr>
                                   <th style="text-align: center; color:#414141 ">Título </th>
@@ -102,17 +102,17 @@
                               </thead>
                               <tbody>
                                 <tr class="link-container">
-                                  <td style="text-align: center;"><a href="exemplosrelatorios.php" class="link-target color= #000000;">Relatório 1</a></td>
+                                    <td style="text-align: center;"><a href="exemplosrelatorios.php" class="link-target color= #000000;" style="color: #106088; font-weight: bold;">Relatório 1</a></td>
                                   <td style="text-align: center;" >10/10/2014 - 13:43</td>
                                   <td style="text-align: center;">Amanda (ADM)</td>
                                 </tr>
                                 <tr class="link-container">
-                                  <td style="text-align: center;"><a href="exemplosrelatorios.php" class="link-target">Relatório 2</a></td>
+                                  <td style="text-align: center;"><a href="exemplosrelatorios.php" class="link-target" style="color: #106088; font-weight: bold;">Relatório 2</a></td>
                                   <td style="text-align: center;">08/10/2014 - 11:20</td>
                                   <td style="text-align: center;">Cláudio (ADM)</td>
                                 </tr>
                                 <tr class="link-container">
-                                  <td style="text-align: center;"><a href="exemplosrelatorios.php" class="link-target">Relatório 3</a></td>
+                                  <td style="text-align: center;"><a href="exemplosrelatorios.php" class="link-target" style="color: #106088; font-weight: bold;">Relatório 3</a></td>
                                   <td style="text-align: center;">05/09/2014 - 13:43</td>
                                   <td style="text-align: center;">Cláudio (ADM)</td>
                                 </tr>
